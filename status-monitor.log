@@ -3091,3 +3091,69 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 rtt min/avg/max/mdev = 5.832/9.029/11.035/2.285 ms
+
+############################ carina - 08/04/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up  2:01,  1 user,  load average: 218.70, 216.75, 213.13
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[   21.862598] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   21.862934] IPv6: ADDRCONF(NETDEV_CHANGE): enp2s0: link becomes ready
+[   74.093457] device nebula1 entered promiscuous mode
+[ 2524.542695] device nebula1 entered promiscuous mode
+[ 3053.862695] perf: interrupt took too long (2528 > 2500), lowering kernel.perf_event_max_sample_rate to 79000
+[ 3186.972399] perf: interrupt took too long (3170 > 3160), lowering kernel.perf_event_max_sample_rate to 63000
+[ 3389.551095] perf: interrupt took too long (3971 > 3962), lowering kernel.perf_event_max_sample_rate to 50250
+[ 3667.281338] perf: interrupt took too long (4965 > 4963), lowering kernel.perf_event_max_sample_rate to 40250
+[ 4210.801366] perf: interrupt took too long (6210 > 6206), lowering kernel.perf_event_max_sample_rate to 32000
+[ 6124.821957] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=9.96 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=8.79 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=7.68 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 7.678/8.807/9.956/0.930 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=9.84 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=9.58 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=8.53 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.528/9.316/9.844/0.567 ms
