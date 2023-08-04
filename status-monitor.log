@@ -3025,3 +3025,69 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 rtt min/avg/max/mdev = 5.340/7.084/10.040/2.101 ms
+
+############################ carina - 08/04/23 10:19:11 EST -0500 ############################
+
+ 10:19:11 up 1 min,  0 users,  load average: 0.18, 0.08, 0.03
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[   16.014329] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Down
+[   16.042098] IPv6: ADDRCONF(NETDEV_CHANGE): eno1: link becomes ready
+[   16.908113] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   16.913586] Bridge firewalling registered
+[   17.143282] Initializing XFRM netlink socket
+[   17.882440] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   20.050010] igb 0000:02:00.0: exceed max 2 second
+[   20.050397] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Down
+[   21.862598] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   21.862934] IPv6: ADDRCONF(NETDEV_CHANGE): enp2s0: link becomes ready
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   18M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=53 time=10.5 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=53 time=9.82 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=53 time=8.94 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.938/9.757/10.516/0.645 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=5.83 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=11.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=10.2 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.832/9.029/11.035/2.285 ms
