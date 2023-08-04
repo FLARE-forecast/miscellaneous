@@ -1897,3 +1897,23 @@ datalogger-mock-data
 
 Logs:
 
+[carina-logs 0daf9ca] 08/04/23 12:20:01 EST -0500: Logs
+ 8 files changed, 208 insertions(+)
+ create mode 100644 nebula1.log_2023-08-04_11:00:02.pcap
+ create mode 100644 nebula1.log_2023-08-04_12:00:02.pcap
+carina-logs
+
+Completed at 08/04/23 12:20:05 EST
+
+
+############################ carina - 08/04/23 12:20:06 EST -0500 ############################
+
+Data:
+
+On branch datalogger-mock-data
+Your branch is up to date with 'origin/datalogger-mock-data'.
+
+nothing to commit, working tree clean
+
+Logs:
+
