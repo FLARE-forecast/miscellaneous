@@ -26427,3 +26427,10 @@ c"
 2023/08/08 18:05:30 autossh[1466]: clear alarm timer (0 secs left)
 2023/08/08 18:05:30 autossh[1466]: set alarm for 600 secs
 2023/08/08 18:05:30 autossh[72815]: child of 1466 execing /usr/bin/ssh
+2023/08/08 18:15:30 autossh[1466]: received SIGALRM (end-of-life 0)
+2023/08/08 18:15:30 autossh[1466]: not what I sent: "carina autossh 1466 1748726117 
+" : ""
+2023/08/08 18:15:30 autossh[1466]: connection ok
+2023/08/08 18:15:30 autossh[1466]: check on child 72815
+2023/08/08 18:15:30 autossh[1466]: clear alarm timer (0 secs left)
+2023/08/08 18:15:30 autossh[1466]: set alarm for 600 secs

@@ -2186,3 +2186,35 @@ nothing to commit, working tree clean
 08/08/23 18:14:03 EST -0500 | ++ git rev-parse --abbrev-ref HEAD
 08/08/23 18:14:03 EST -0500 | + git push --force origin 6d6fce126e77abf3c020aa4990fb4bf70aabddd2:refs/heads/datalogger-mock-data
 08/08/23 18:14:04 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 18:14:05 EST -0500 |    3d1f081..6d6fce1  6d6fce126e77abf3c020aa4990fb4bf70aabddd2 -> datalogger-mock-data
+08/08/23 18:14:05 EST -0500 | + echo Logs:
+08/08/23 18:14:05 EST -0500 | Logs:
+08/08/23 18:14:05 EST -0500 | + cd /data/carina-logs
+08/08/23 18:14:05 EST -0500 | + git add .
+08/08/23 18:14:05 EST -0500 | + git commit -m '08/08/23 18:14:01 EST -0500: Logs'
+08/08/23 18:14:05 EST -0500 | [carina-logs ee4d95c] 08/08/23 18:14:01 EST -0500: Logs
+08/08/23 18:14:05 EST -0500 |  8 files changed, 226 insertions(+)
+08/08/23 18:14:05 EST -0500 | ++ git log --reverse --format=%H --branches --not --remotes
+08/08/23 18:14:05 EST -0500 | + for commit in $(git log --reverse --format="%H" --branches --not --remotes)
+08/08/23 18:14:05 EST -0500 | ++ git rev-parse --abbrev-ref HEAD
+08/08/23 18:14:05 EST -0500 | + git push --force origin ee4d95c13eb89ae4af15ce913aff7b0866bbf6dc:refs/heads/carina-logs
+08/08/23 18:14:08 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 18:14:08 EST -0500 |    9947833..ee4d95c  ee4d95c13eb89ae4af15ce913aff7b0866bbf6dc -> carina-logs
+08/08/23 18:19:03 EST -0500 | #####
+08/08/23 18:19:03 EST -0500 | Data:
+08/08/23 18:19:03 EST -0500 | On branch datalogger-mock-data
+08/08/23 18:19:03 EST -0500 | Your branch is up to date with 'origin/datalogger-mock-data'.
+08/08/23 18:19:03 EST -0500 | 
+08/08/23 18:19:04 EST -0500 | nothing to commit, working tree clean
+08/08/23 18:20:02 EST -0500 | #####
+08/08/23 18:20:02 EST -0500 | Data:
+08/08/23 18:20:02 EST -0500 | On branch datalogger-mock-data
+08/08/23 18:20:02 EST -0500 | Your branch is up to date with 'origin/datalogger-mock-data'.
+08/08/23 18:20:02 EST -0500 | 
+08/08/23 18:20:02 EST -0500 | nothing to commit, working tree clean
+08/08/23 18:22:03 EST -0500 | #####
+08/08/23 18:22:03 EST -0500 | Data:
+08/08/23 18:22:04 EST -0500 | [datalogger-mock-data 0814f3d] 08/08/23 18:22:03 EST -0500: Git Backup
+08/08/23 18:22:04 EST -0500 |  1 file changed, 1 insertion(+)
+08/08/23 18:22:06 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 18:22:06 EST -0500 |    6d6fce1..0814f3d  0814f3d0748789f9b1f3044bbce3fb92d76fa3d7 -> datalogger-mock-data
