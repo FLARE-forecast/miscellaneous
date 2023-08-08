@@ -3157,3 +3157,1059 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 rtt min/avg/max/mdev = 8.528/9.316/9.844/0.567 ms
+
+############################ carina - 08/04/23 18:19:02 EST -0500 ############################
+
+ 18:19:02 up  8:01,  0 users,  load average: 247.92, 230.65, 223.67
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[ 7396.089242] perf: interrupt took too long (7763 > 7762), lowering kernel.perf_event_max_sample_rate to 25750
+[ 9723.868060] device nebula1 entered promiscuous mode
+[13323.973173] device nebula1 entered promiscuous mode
+[15500.700758] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[15503.509152] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[16923.968992] device nebula1 entered promiscuous mode
+[20523.527752] device nebula1 entered promiscuous mode
+[24122.608033] device nebula1 left promiscuous mode
+[24123.295986] device nebula1 entered promiscuous mode
+[27723.606636] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=7.96 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=7.99 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=7.50 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 7.495/7.813/7.985/0.225 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.54 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.90 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=6.56 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 6.536/6.665/6.904/0.168 ms
+
+############################ carina - 08/05/23 00:19:01 EST -0500 ############################
+
+ 00:19:01 up 14:01,  0 users,  load average: 232.58, 227.86, 227.12
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[24123.295986] device nebula1 entered promiscuous mode
+[27723.606636] device nebula1 entered promiscuous mode
+[31322.222195] device nebula1 left promiscuous mode
+[31322.705547] device nebula1 entered promiscuous mode
+[34922.236157] device nebula1 left promiscuous mode
+[34923.528800] device nebula1 entered promiscuous mode
+[38524.020662] device nebula1 entered promiscuous mode
+[42122.451381] device nebula1 entered promiscuous mode
+[45722.838383] device nebula1 entered promiscuous mode
+[49322.658965] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=53 time=9.58 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=53 time=8.24 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=53 time=8.05 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.047/8.621/9.577/0.680 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=7.56 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.58 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.62 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.621/6.585/7.558/0.790 ms
+
+############################ carina - 08/05/23 06:19:01 EST -0500 ############################
+
+ 06:19:01 up 20:01,  0 users,  load average: 198.68, 205.89, 211.71
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[42122.451381] device nebula1 entered promiscuous mode
+[45722.838383] device nebula1 entered promiscuous mode
+[49322.658965] device nebula1 entered promiscuous mode
+[52922.538226] device nebula1 left promiscuous mode
+[52923.142233] device nebula1 entered promiscuous mode
+[56522.320535] device nebula1 entered promiscuous mode
+[60122.311782] device nebula1 entered promiscuous mode
+[63722.172384] device nebula1 entered promiscuous mode
+[67322.215379] device nebula1 entered promiscuous mode
+[70922.027817] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=53 time=9.83 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=53 time=9.43 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=53 time=11.5 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 9.433/10.242/11.460/0.876 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.10 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=7.72 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=6.60 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 6.098/6.805/7.718/0.677 ms
+
+############################ carina - 08/05/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up 1 day,  2:01,  0 users,  load average: 201.27, 221.37, 225.80
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[86461.138330] device eno1 entered promiscuous mode
+[88413.110750] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[88414.827158] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[88418.026568] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[88422.462946] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[88920.424186] device nebula1 left promiscuous mode
+[88920.700300] device nebula1 entered promiscuous mode
+[91600.478384] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[91603.318752] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[92521.237706] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=53 time=10.2 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=53 time=9.57 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=53 time=8.80 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.801/9.510/10.156/0.554 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=7.66 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.42 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.43 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.434/6.504/7.657/0.909 ms
+
+############################ carina - 08/05/23 18:19:01 EST -0500 ############################
+
+ 18:19:01 up 1 day,  8:01,  0 users,  load average: 217.82, 224.88, 227.14
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[88920.700300] device nebula1 entered promiscuous mode
+[91600.478384] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[91603.318752] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[92521.237706] device nebula1 entered promiscuous mode
+[96120.715281] device nebula1 entered promiscuous mode
+[99721.171896] device nebula1 entered promiscuous mode
+[103320.136360] device nebula1 entered promiscuous mode
+[106920.501575] device nebula1 left promiscuous mode
+[106921.142217] device nebula1 entered promiscuous mode
+[110520.675639] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=9.90 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=8.95 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=7.65 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 7.646/8.832/9.901/0.924 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=5.20 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=4.54 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=9.47 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 4.536/6.400/9.468/2.185 ms
+
+############################ carina - 08/06/23 00:19:01 EST -0500 ############################
+
+ 00:19:01 up 1 day, 14:01,  0 users,  load average: 248.17, 232.43, 226.53
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[88920.700300] device nebula1 entered promiscuous mode
+[91600.478384] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[91603.318752] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[92521.237706] device nebula1 entered promiscuous mode
+[96120.715281] device nebula1 entered promiscuous mode
+[99721.171896] device nebula1 entered promiscuous mode
+[103320.136360] device nebula1 entered promiscuous mode
+[106920.501575] device nebula1 left promiscuous mode
+[106921.142217] device nebula1 entered promiscuous mode
+[110520.675639] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   19M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=53 time=11.9 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=53 time=11.4 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=53 time=10.8 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 10.794/11.384/11.927/0.463 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.90 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.66 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.56 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.560/6.371/6.895/0.581 ms
+
+############################ carina - 08/06/23 06:19:01 EST -0500 ############################
+
+ 06:19:01 up 1 day, 20:01,  0 users,  load average: 235.39, 229.79, 225.83
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[88920.700300] device nebula1 entered promiscuous mode
+[91600.478384] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[91603.318752] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[92521.237706] device nebula1 entered promiscuous mode
+[96120.715281] device nebula1 entered promiscuous mode
+[99721.171896] device nebula1 entered promiscuous mode
+[103320.136360] device nebula1 entered promiscuous mode
+[106920.501575] device nebula1 left promiscuous mode
+[106921.142217] device nebula1 entered promiscuous mode
+[110520.675639] device nebula1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.4) 56(84) bytes of data.
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=1 ttl=51 time=8.00 ms
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=2 ttl=51 time=7.13 ms
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=3 ttl=51 time=6.87 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 6.867/7.330/7.998/0.483 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=5.86 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=4.87 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=10.3 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 4.874/6.998/10.260/2.341 ms
+
+############################ carina - 08/06/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up 2 days,  2:01,  0 users,  load average: 222.20, 229.82, 225.18
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[172859.066200] device eno1 left promiscuous mode
+[172859.854595] device eno1 entered promiscuous mode
+[173658.235940] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[173661.016305] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[175824.542083] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[175826.214504] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[175829.441944] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[175833.438239] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[178208.137256] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[178210.981626] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=53 time=9.48 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=53 time=8.94 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=53 time=8.53 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 8.532/8.982/9.479/0.388 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=7.07 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=5.22 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=10.3 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 5.224/7.537/10.316/2.104 ms
+
+############################ carina - 08/06/23 18:19:01 EST -0500 ############################
+
+ 18:19:01 up 2 days,  8:01,  0 users,  load average: 209.70, 222.75, 225.37
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[195308.914015] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[195310.606440] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[195313.821869] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[195318.138209] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[199351.731202] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[199354.483595] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[199934.086648] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[199935.819033] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[199938.970446] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[199943.018790] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=9.15 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=9.98 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=8.88 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.883/9.336/9.976/0.465 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=8.58 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=8.02 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=7.51 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 7.511/8.035/8.577/0.435 ms
+
+############################ carina - 08/07/23 00:19:01 EST -0500 ############################
+
+ 00:19:01 up 2 days, 14:01,  0 users,  load average: 223.74, 229.87, 227.67
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[199938.970446] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[199943.018790] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[203215.447194] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[203218.263558] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[209004.295648] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[209006.092052] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[209009.167503] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[209013.223815] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[210220.632978] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[210223.401349] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.113.4) 56(84) bytes of data.
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=1 ttl=51 time=9.07 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=2 ttl=51 time=8.85 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=3 ttl=51 time=8.10 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.102/8.675/9.073/0.415 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=7.68 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.56 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.54 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 5.539/6.592/7.679/0.873 ms
+
+############################ carina - 08/07/23 06:19:01 EST -0500 ############################
+
+ 06:19:02 up 2 days, 20:01,  0 users,  load average: 229.30, 226.10, 226.64
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[199938.970446] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[199943.018790] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[203215.447194] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[203218.263558] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[209004.295648] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[209006.092052] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[209009.167503] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[209013.223815] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[210220.632978] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[210223.401349] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=53 time=10.1 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=53 time=9.08 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=53 time=8.53 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.533/9.229/10.076/0.638 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=5.23 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=7.63 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=10.0 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 5.228/7.623/10.014/1.953 ms
+
+############################ carina - 08/07/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up 3 days,  2:01,  0 users,  load average: 216.50, 218.91, 220.35
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[209013.223815] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[210220.632978] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[210223.401349] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[247517.159861] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[247518.860290] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[247522.067820] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[247526.340026] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[259256.777248] device eno1 left promiscuous mode
+[259257.178415] device eno1 entered promiscuous mode
+[266076.895184] usb 1-5: USB disconnect, device number 2
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=9.00 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=8.70 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=9.79 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.695/9.163/9.794/0.463 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=9.09 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=7.25 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.97 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.969/7.435/9.090/1.281 ms
+
+############################ carina - 08/07/23 18:19:01 EST -0500 ############################
+
+ 18:19:01 up 3 days,  8:01,  0 users,  load average: 223.38, 228.62, 231.24
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[278418.566950] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[278420.243370] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[278423.466778] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[278427.543134] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[283838.962514] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[283841.770933] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[287921.721334] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287923.473735] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[287926.593198] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287931.145499] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.4) 56(84) bytes of data.
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=1 ttl=51 time=10.1 ms
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=2 ttl=51 time=8.97 ms
+64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=3 ttl=51 time=8.56 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.563/9.195/10.057/0.631 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=7.67 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.38 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.56 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 5.563/6.537/7.669/0.866 ms
+
+############################ carina - 08/08/23 00:19:02 EST -0500 ############################
+
+ 00:19:02 up 3 days, 14:01,  0 users,  load average: 215.03, 224.10, 226.99
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[278423.466778] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[278427.543134] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[283838.962514] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[283841.770933] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[287921.721334] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287923.473735] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[287926.593198] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287931.145499] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[300828.227209] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[300830.991576] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   20M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=53 time=10.6 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=53 time=10.0 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=53 time=9.56 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 9.561/10.046/10.579/0.416 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=6.65 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=6.05 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=5.53 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 5.530/6.075/6.646/0.455 ms
+
+############################ carina - 08/08/23 06:19:01 EST -0500 ############################
+
+ 06:19:01 up 3 days, 20:01,  0 users,  load average: 208.95, 222.50, 227.42
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[278423.466778] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[278427.543134] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[283838.962514] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[283841.770933] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[287921.721334] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287923.473735] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[287926.593198] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287931.145499] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[300828.227209] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[300830.991576] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   21M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=53 time=10.5 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=53 time=9.94 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=53 time=9.48 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 9.481/9.968/10.488/0.411 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=8.99 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=8.18 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=7.58 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 7.580/8.252/8.994/0.579 ms
+
+############################ carina - 08/08/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up 4 days,  2:01,  1 user,  load average: 222.63, 232.35, 231.00
+
+
+reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18   still running
+reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+reboot   system boot  5.15.0-76-generi Thu Jul 13 11:51 - 21:35  (09:44)
+
+
+
+
+
+
+
+
+[287926.593198] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[287931.145499] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[300828.227209] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[300830.991576] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+[342082.943521] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[342084.603941] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 10 Mbps Full Duplex, Flow Control: RX/TX
+[342087.827374] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[342092.143687] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX/TX
+[345654.056799] device eno1 left promiscuous mode
+[345654.639201] device eno1 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           29G   21M   28G   1% /data
+
+
+tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+
+
+
+
+
+
+enp2s0:
+192.168.1.171/24
+
+
+PING github.com (140.82.114.3) 56(84) bytes of data.
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=51 time=8.34 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=51 time=10.9 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=51 time=12.7 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 8.337/10.618/12.659/1.772 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=57 time=11.0 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=57 time=8.24 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=57 time=7.49 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 7.494/8.924/11.034/1.523 ms
