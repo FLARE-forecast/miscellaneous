@@ -2218,3 +2218,22 @@ nothing to commit, working tree clean
 08/08/23 18:22:04 EST -0500 |  1 file changed, 1 insertion(+)
 08/08/23 18:22:06 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
 08/08/23 18:22:06 EST -0500 |    6d6fce1..0814f3d  0814f3d0748789f9b1f3044bbce3fb92d76fa3d7 -> datalogger-mock-data
+08/08/23 18:22:06 EST -0500 | Logs:
+08/08/23 18:22:08 EST -0500 | [carina-logs 020cb8a] 08/08/23 18:22:03 EST -0500: Logs
+08/08/23 18:22:08 EST -0500 |  12 files changed, 106 insertions(+), 1566 deletions(-)
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 + '[' true '!=' true ']'_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 + check_if_enabled git_push_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 + check_if_enabled health_checks_io_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 + module_enabled_var=git_push_enabled_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 + module_enabled_var=health_checks_io_enabled_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 datalogger_mock_data_generator_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 git_push_log_file
+08/08/23 18:22:08 EST -0500 |  delete mode 100644 script_log_file
+08/08/23 18:22:10 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 18:22:10 EST -0500 |    ee4d95c..020cb8a  020cb8a181e81ab1cbf24fd6d13be5de59e566ba -> carina-logs
+08/08/23 18:31:17 EST -0500 | #####
+08/08/23 18:31:17 EST -0500 | Data:
+08/08/23 18:31:19 EST -0500 | [datalogger-mock-data 8274b0c] 08/08/23 18:31:17 EST -0500: Git Backup
+08/08/23 18:31:19 EST -0500 |  1 file changed, 1 insertion(+)
+08/08/23 18:31:21 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 18:31:21 EST -0500 |    0814f3d..8274b0c  8274b0cda25259801c04098e03db6ae325f24417 -> datalogger-mock-data
