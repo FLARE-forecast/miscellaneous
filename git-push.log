@@ -2158,3 +2158,31 @@ nothing to commit, working tree clean
 08/08/23 13:11:20 EST -0500 |  2 files changed, 15 insertions(+)
 08/08/23 13:11:23 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
 08/08/23 13:11:23 EST -0500 |    742a308..3292361  32923614423c2243e3c5193f41572475d2a93f90 -> carina-logs
+08/08/23 17:59:09 EST -0500 | + check_if_enabled git_push
+08/08/23 17:59:09 EST -0500 | + module_enabled_var=git_push_enabled
+08/08/23 17:59:09 EST -0500 | + '[' true '!=' true ']'
+08/08/23 17:59:09 EST -0500 | + git_push_log_file_path=/data/carina-logs/git-push.log
+08/08/23 17:59:09 EST -0500 | + echo Test
+08/08/23 17:59:09 EST -0500 | Test
+08/08/23 17:59:09 EST -0500 | + date
+08/08/23 17:59:09 EST -0500 | Tue Aug  8 17:59:09 EST 2023
+08/08/23 18:14:01 EST -0500 | + check_if_enabled git_push
+08/08/23 18:14:01 EST -0500 | + module_enabled_var=git_push_enabled
+08/08/23 18:14:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 18:14:01 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 18:14:01 EST -0500 | + timestamp='08/08/23 18:14:01 EST -0500'
+08/08/23 18:14:01 EST -0500 | + git_push_log_file_path=/data/carina-logs/git-push.log
+08/08/23 18:14:02 EST -0500 | + echo '#####'
+08/08/23 18:14:03 EST -0500 | #####
+08/08/23 18:14:03 EST -0500 | + echo Data:
+08/08/23 18:14:03 EST -0500 | Data:
+08/08/23 18:14:03 EST -0500 | + cd /data/datalogger-mock-data
+08/08/23 18:14:03 EST -0500 | + git add .
+08/08/23 18:14:03 EST -0500 | + git commit -m '08/08/23 18:14:01 EST -0500: Git Backup'
+08/08/23 18:14:03 EST -0500 | [datalogger-mock-data 6d6fce1] 08/08/23 18:14:01 EST -0500: Git Backup
+08/08/23 18:14:03 EST -0500 |  1 file changed, 3 insertions(+)
+08/08/23 18:14:03 EST -0500 | ++ git log --reverse --format=%H --branches --not --remotes
+08/08/23 18:14:03 EST -0500 | + for commit in $(git log --reverse --format="%H" --branches --not --remotes)
+08/08/23 18:14:03 EST -0500 | ++ git rev-parse --abbrev-ref HEAD
+08/08/23 18:14:03 EST -0500 | + git push --force origin 6d6fce126e77abf3c020aa4990fb4bf70aabddd2:refs/heads/datalogger-mock-data
+08/08/23 18:14:04 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
