@@ -1,0 +1,77 @@
+08/08/23 13:22:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:22:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:22:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:22:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:22:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:22:02 EST -0500 | This is a test message
+08/08/23 13:22:11 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:22:11 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:22:11 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:22:11 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:22:13 EST -0500 | + echo 'This is a test message'
+08/08/23 13:22:13 EST -0500 | This is a test message
+08/08/23 13:23:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:23:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:23:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:23:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:23:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:23:02 EST -0500 | This is a test message
+08/08/23 13:24:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:24:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:24:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:24:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:24:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:24:02 EST -0500 | This is a test message
+08/08/23 13:25:00 EST -0500 | + cd /home/ubuntu/miscellaneous//carina
+08/08/23 13:25:00 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/startup-notifier.sh: line 32: cd: /home/ubuntu/miscellaneous//carina: No such file or directory
+08/08/23 13:25:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:25:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:25:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:25:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:25:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:25:02 EST -0500 | This is a test message
+08/08/23 13:25:46 EST -0500 | + cd /home/ubuntu/miscellaneous//carina
+08/08/23 13:25:46 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/startup-notifier.sh: line 32: cd: /home/ubuntu/miscellaneous//carina: No such file or directory
+08/08/23 13:26:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:26:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:26:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:26:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:26:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:26:02 EST -0500 | This is a test message
+08/08/23 13:27:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:27:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:27:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:27:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:27:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:27:02 EST -0500 | This is a test message
+08/08/23 13:28:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:28:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:28:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:28:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:28:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:28:02 EST -0500 | This is a test message
+08/08/23 13:29:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:29:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:29:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:29:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:29:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:29:02 EST -0500 | This is a test message
+08/08/23 13:30:01 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:30:01 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:30:01 EST -0500 | datalogger_mock_data_generator
+08/08/23 13:30:01 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:30:01 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:30:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:30:02 EST -0500 | This is a test message
+08/08/23 13:31:02 EST -0500 | + check_if_enabled health_checks_io
+08/08/23 13:31:02 EST -0500 | + module_enabled_var=health_checks_io_enabled
+08/08/23 13:31:02 EST -0500 | + '[' true '!=' true ']'
+08/08/23 13:31:02 EST -0500 | + curl -fsS --max-time 60 --retry 5 -o /dev/null https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+08/08/23 13:31:02 EST -0500 | + echo 'This is a test message'
+08/08/23 13:31:02 EST -0500 | This is a test message
+08/08/23 13:31:44 EST -0500 | git_push
+08/08/23 13:31:44 EST -0500 | git_push
+08/08/23 13:31:46 EST -0500 | git_push
+08/08/23 13:31:48 EST -0500 | git_push
+08/08/23 13:31:51 EST -0500 | git_push
+08/08/23 13:31:52 EST -0500 | git_push
