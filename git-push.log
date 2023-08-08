@@ -2125,3 +2125,17 @@ Your branch is up to date with 'origin/datalogger-mock-data'.
 
 nothing to commit, working tree clean
 08/08/23 13:05:09 EST -0500 | Logs:
+08/08/23 13:05:09 EST -0500 | 
+08/08/23 13:05:09 EST -0500 | [carina-logs 08e77ef] 08/08/23 13:05:08 EST -0500: Logs
+ 1 file changed, 14 insertions(+)
+08/08/23 13:05:11 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+   ae3d0ff..08e77ef  08e77efc0273ea5f95db332d6b7e2f6060a7e0c6 -> carina-logs
+08/08/23 13:05:11 EST -0500 | Completed at 08/08/23 13:05:11 EST
+08/08/23 13:08:32 EST -0500 | ############################ carina - 08/08/23 13:08:32 EST -0500 ############################
+08/08/23 13:08:32 EST -0500 | Data:
+08/08/23 13:08:32 EST -0500 | 
+08/08/23 13:08:32 EST -0500 | On branch datalogger-mock-data
+08/08/23 13:08:32 EST -0500 | Your branch is up to date with 'origin/datalogger-mock-data'.
+08/08/23 13:08:32 EST -0500 | 
+08/08/23 13:08:32 EST -0500 | nothing to commit, working tree clean
+08/08/23 13:08:32 EST -0500 | Logs:
