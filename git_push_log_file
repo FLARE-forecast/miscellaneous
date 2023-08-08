@@ -288,3 +288,106 @@
 08/08/23 17:44:14 EST -0500 | Logs:
 08/08/23 17:44:14 EST -0500 |    0c93908..3d1f081  3d1f08187e0ad12cbc061b98a94446bfc25b287d -> datalogger-mock-data'
 08/08/23 17:44:15 EST -0500 | + local module=git_push
+08/08/23 17:44:15 EST -0500 | + local 'message=To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:16 EST -0500 |    0c93908..3d1f081  3d1f08187e0ad12cbc061b98a94446bfc25b287d -> datalogger-mock-data'
+08/08/23 17:44:16 EST -0500 | + local log_file=git_push_log_file
+08/08/23 17:44:16 EST -0500 | + echo 'To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:16 EST -0500 |    0c93908..3d1f081  3d1f08187e0ad12cbc061b98a94446bfc25b287d -> datalogger-mock-data'
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:14 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git'
+08/08/23 17:44:16 EST -0500 | 
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:14 EST -0500 |    0c93908..3d1f081  3d1f08187e0ad12cbc061b98a94446bfc25b287d -> datalogger-mock-data'
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | + log_to_file git_push Logs:
+08/08/23 17:44:16 EST -0500 | + local module=git_push
+08/08/23 17:44:16 EST -0500 | + local message=Logs:
+08/08/23 17:44:16 EST -0500 | + local log_file=git_push_log_file
+08/08/23 17:44:16 EST -0500 | + echo Logs:
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:14 EST -0500 | Logs:'
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | [carina-logs 4bdd279] : Logs
+08/08/23 17:44:16 EST -0500 |  6 files changed, 1222 insertions(+)
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | + cd /data/carina-logs
+08/08/23 17:44:16 EST -0500 | ++ git add .
+08/08/23 17:44:16 EST -0500 | + log_to_file git_push ''
+08/08/23 17:44:16 EST -0500 | + local module=git_push
+08/08/23 17:44:16 EST -0500 | + local message=
+08/08/23 17:44:16 EST -0500 | + local log_file=git_push_log_file
+08/08/23 17:44:16 EST -0500 | + echo ''
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:16 EST -0500 | '
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ git commit -m ': Logs'
+08/08/23 17:44:16 EST -0500 | + log_to_file git_push '[carina-logs 4bdd279] : Logs
+08/08/23 17:44:16 EST -0500 |  6 files changed, 1222 insertions(+)'
+08/08/23 17:44:16 EST -0500 | + local module=git_push
+08/08/23 17:44:16 EST -0500 | + local 'message=[carina-logs 4bdd279] : Logs
+08/08/23 17:44:16 EST -0500 |  6 files changed, 1222 insertions(+)'
+08/08/23 17:44:16 EST -0500 | + local log_file=git_push_log_file
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | + echo '[carina-logs 4bdd279] : Logs
+08/08/23 17:44:16 EST -0500 |  6 files changed, 1222 insertions(+)'
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:16 EST -0500 | [carina-logs 4bdd279] : Logs'
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:16 EST -0500 | + read -r line
+08/08/23 17:44:16 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:16 EST -0500 | + echo '08/08/23 17:44:16 EST -0500 |  6 files changed, 1222 insertions(+)'
+08/08/23 17:44:16 EST -0500 | + IFS=
+08/08/23 17:44:17 EST -0500 | + read -r line
+08/08/23 17:44:17 EST -0500 | ++ git log --reverse --format=%H --branches --not --remotes
+08/08/23 17:44:18 EST -0500 | + for commit in $(git log --reverse --format="%H" --branches --not --remotes)
+08/08/23 17:44:18 EST -0500 | +++ git rev-parse --abbrev-ref HEAD
+08/08/23 17:44:18 EST -0500 | ++ git push --force origin 4bdd27996c7c68bf00f4420626d4776491aa705e:refs/heads/carina-logs
+08/08/23 17:44:18 EST -0500 | + log_to_file git_push 'To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:18 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:19 EST -0500 |    f46d00d..4bdd279  4bdd27996c7c68bf00f4420626d4776491aa705e -> carina-logs'
+08/08/23 17:44:19 EST -0500 |    f46d00d..4bdd279  4bdd27996c7c68bf00f4420626d4776491aa705e -> carina-logs
+08/08/23 17:44:19 EST -0500 | + local module=git_push
+08/08/23 17:44:20 EST -0500 | + local 'message=To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:20 EST -0500 |    f46d00d..4bdd279  4bdd27996c7c68bf00f4420626d4776491aa705e -> carina-logs'
+08/08/23 17:44:20 EST -0500 | + local log_file=git_push_log_file
+08/08/23 17:44:20 EST -0500 | + echo 'To github.com:FLARE-forecast/miscellaneous.git
+08/08/23 17:44:20 EST -0500 |    f46d00d..4bdd279  4bdd27996c7c68bf00f4420626d4776491aa705e -> carina-logs'
+08/08/23 17:44:20 EST -0500 | + IFS=
+08/08/23 17:44:20 EST -0500 | + read -r line
+08/08/23 17:44:20 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:20 EST -0500 | + echo '08/08/23 17:44:18 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git'
+08/08/23 17:44:20 EST -0500 | + IFS=
+08/08/23 17:44:20 EST -0500 | + read -r line
+08/08/23 17:44:20 EST -0500 | ++ date '+%D %T %Z %z'
+08/08/23 17:44:20 EST -0500 | + echo '08/08/23 17:44:19 EST -0500 |    f46d00d..4bdd279  4bdd27996c7c68bf00f4420626d4776491aa705e -> carina-logs'
+08/08/23 17:44:20 EST -0500 | + IFS=
+08/08/23 17:44:20 EST -0500 | + read -r line
+08/08/23 17:48:45 EST -0500 | #####
+08/08/23 17:48:45 EST -0500 | + check_if_enabled git_push
+08/08/23 17:48:45 EST -0500 | Data:
+08/08/23 17:48:45 EST -0500 | + module_enabled_var=git_push_enabled
+08/08/23 17:48:45 EST -0500 | + '[' true '!=' true ']'
+08/08/23 17:48:45 EST -0500 | 
+08/08/23 17:48:45 EST -0500 | + echo git-push.log
+08/08/23 17:48:45 EST -0500 | git-push.log
+08/08/23 17:48:45 EST -0500 | On branch datalogger-mock-data
+08/08/23 17:48:45 EST -0500 | + git_push_log_file_path=/data/carina-logs/git-push.log
+08/08/23 17:48:45 EST -0500 | Your branch is up to date with 'origin/datalogger-mock-data'.
+08/08/23 17:48:45 EST -0500 | + log_to_file git_push '#####'
+08/08/23 17:48:45 EST -0500 | 
+08/08/23 17:48:45 EST -0500 | nothing to commit, working tree clean
+08/08/23 17:48:45 EST -0500 | + local module=git_push
+08/08/23 17:48:45 EST -0500 | + local message=#####
+08/08/23 17:48:45 EST -0500 | Logs:
+08/08/23 17:48:45 EST -0500 | + local log_file=git_push_log_file
