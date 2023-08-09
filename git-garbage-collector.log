@@ -574,3 +574,22 @@ Working on: /data/datalogger-mock-data
 Working on: /data/carina-logs
 Disk Usage After Git Garbage Collector:
 /dev/sda1                           29G   25M   28G   1% /data
+08/08/23 18:33:38 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/08/23 18:33:38 EST -0500 | /dev/sda1                           29G   12M   28G   1% /data
+08/08/23 18:33:38 EST -0500 | Working on: /data/datalogger-mock-data
+08/08/23 18:33:40 EST -0500 | Working on: /data/carina-logs
+08/08/23 18:33:47 EST -0500 | Disk Usage After Git Garbage Collector:
+08/08/23 18:33:47 EST -0500 | /dev/sda1                           29G  8.3M   28G   1% /data
+08/08/23 18:34:42 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/08/23 18:34:42 EST -0500 | /dev/sda1                           29G  8.3M   28G   1% /data
+08/08/23 18:34:42 EST -0500 | Working on: /data/datalogger-mock-data
+08/08/23 18:34:42 EST -0500 | Working on: /data/carina-logs
+08/08/23 18:34:44 EST -0500 | Disk Usage After Git Garbage Collector:
+08/08/23 18:34:44 EST -0500 | /dev/sda1                           29G  8.3M   28G   1% /data
+08/08/23 21:07:20 EST -0500 | #####
+08/08/23 21:07:20 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/08/23 21:07:20 EST -0500 | /dev/sda1                           29G  8.3M   28G   1% /data
+08/08/23 21:07:21 EST -0500 | Working on: /data/datalogger-mock-data
+08/08/23 21:07:22 EST -0500 | Working on: /data/carina-logs
+08/08/23 21:07:23 EST -0500 | Disk Usage After Git Garbage Collector:
+08/08/23 21:07:23 EST -0500 | /dev/sda1                           29G  8.3M   28G   1% /data
