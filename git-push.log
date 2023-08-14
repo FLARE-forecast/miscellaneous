@@ -2333,3 +2333,14 @@ nothing to commit, working tree clean
 08/14/23 12:20:02 EST -0500 |  1 file changed, 429 insertions(+)
 08/14/23 12:20:03 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
 08/14/23 12:20:03 EST -0500 |    4985b76..906bfec  906bfecdecd9fbedece8d434b4580d5198551df3 -> datalogger-mock-data
+08/14/23 12:20:03 EST -0500 | Logs:
+08/14/23 12:20:03 EST -0500 | [carina-logs b0c3855] 08/14/23 12:20:02 EST -0500: Logs
+08/14/23 12:20:03 EST -0500 |  5 files changed, 42216 insertions(+)
+08/14/23 12:20:04 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/14/23 12:20:04 EST -0500 |    693fa9f..b0c3855  b0c3855bb7dcb14039b10d2a5bd26989bbfbd0e7 -> carina-logs
+08/14/23 12:20:04 EST -0500 | #####  End  #####
+08/14/23 12:20:06 EST -0500 | ##### Start #####
+08/14/23 12:20:06 EST -0500 | Data:
+08/14/23 12:20:06 EST -0500 | [datalogger-mock-data 897cba7] 08/14/23 12:20:06 EST -0500: Git Backup
+08/14/23 12:20:06 EST -0500 |  1 file changed, 1 insertion(+)
+08/14/23 12:20:07 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
