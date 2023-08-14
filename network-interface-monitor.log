@@ -534,3 +534,24 @@
 08/14/23 10:21:50 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (36404) - No such process
 08/14/23 10:21:50 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (36404) - No such process
 08/14/23 10:21:50 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:50 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (36601) - No such process
+08/14/23 10:21:50 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (36601) - No such process
+08/14/23 10:21:50 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:51 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (36775) - No such process
+08/14/23 10:21:51 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (36775) - No such process
+08/14/23 10:21:51 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:51 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (36960) - No such process
+08/14/23 10:21:51 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (36960) - No such process
+08/14/23 10:21:52 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:52 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (37136) - No such process
+08/14/23 10:21:52 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (37136) - No such process
+08/14/23 10:21:52 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:52 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (37550) - No such process
+08/14/23 10:21:52 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (37550) - No such process
+08/14/23 10:21:53 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:53 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (37777) - No such process
+08/14/23 10:21:53 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (37777) - No such process
+08/14/23 10:21:53 EST -0500 | tcpdump: can't parse filter expression: syntax error
+08/14/23 10:21:53 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 47: kill: (38056) - No such process
+08/14/23 10:21:53 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh: line 52: kill: (38056) - No such process
+08/14/23 10:21:54 EST -0500 | tcpdump: can't parse filter expression: syntax error
