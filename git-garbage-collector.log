@@ -649,3 +649,57 @@ Disk Usage After Git Garbage Collector:
 08/15/23 06:20:16 EST -0500 | Disk Usage After Git Garbage Collector:
 08/15/23 06:20:16 EST -0500 | /dev/sda1                           29G   64M   28G   1% /data
 08/15/23 06:20:16 EST -0500 | #####  End  #####
+08/15/23 10:03:39 EST -0500 | ##### Start #####
+08/15/23 10:03:39 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:03:39 EST -0500 | /dev/sda1                           29G   77M   28G   1% /data
+08/15/23 10:03:39 EST -0500 | Working on: /data/datalogger-mock-data
+08/15/23 10:03:39 EST -0500 | Working on: /data/carina-logs
+08/15/23 10:03:42 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:03:42 EST -0500 | /dev/sda1                           29G   74M   28G   1% /data
+08/15/23 10:03:42 EST -0500 | #####  End  #####
+08/15/23 10:05:09 EST -0500 | ##### Start #####
+08/15/23 10:05:09 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:05:09 EST -0500 | /dev/sda1                           29G   74M   28G   1% /data
+08/15/23 10:05:09 EST -0500 | Working on: /data/datalogger-mock-data
+08/15/23 10:05:09 EST -0500 | Working on: /data/carina-logs
+08/15/23 10:05:10 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:05:10 EST -0500 | /dev/sda1                           29G   74M   28G   1% /data
+08/15/23 10:05:10 EST -0500 | #####  End  #####
+08/15/23 10:15:44 EST -0500 | ##### Start #####
+08/15/23 10:15:44 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:15:44 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:15:44 EST -0500 | Working on: /data/datalogger-mock-data
+08/15/23 10:15:44 EST -0500 | Working on: /data/carina-logs
+08/15/23 10:15:44 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:15:44 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:15:44 EST -0500 | #####  End  #####
+08/15/23 10:18:41 EST -0500 | ##### Start #####
+08/15/23 10:18:41 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:18:41 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:18:41 EST -0500 | Working on: /data/carina-logs
+08/15/23 10:18:42 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:18:42 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:18:42 EST -0500 | #####  End  #####
+08/15/23 10:30:38 EST -0500 | + echo '##### Start #####'
+08/15/23 10:30:38 EST -0500 | ##### Start #####
+08/15/23 10:30:38 EST -0500 | + check_if_enabled git_garbage_collector
+08/15/23 10:30:38 EST -0500 | + module_enabled_var=git_garbage_collector_enabled
+08/15/23 10:30:38 EST -0500 | + '[' true '!=' true ']'
+08/15/23 10:30:38 EST -0500 | + echo -e 'Disk Usage Before Git Garbage Collector:'
+08/15/23 10:30:38 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:30:38 EST -0500 | + df -h
+08/15/23 10:30:38 EST -0500 | + grep /data
+08/15/23 10:30:38 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:30:38 EST -0500 | + cd /data/carina-logs
+08/15/23 10:30:38 EST -0500 | ++ pwd
+08/15/23 10:30:38 EST -0500 | + echo -e 'Working on: /data/carina-logs'
+08/15/23 10:30:38 EST -0500 | Working on: /data/carina-logs
+08/15/23 10:30:38 EST -0500 | + git gc --prune
+08/15/23 10:30:38 EST -0500 | + echo -e 'Disk Usage After Git Garbage Collector:'
+08/15/23 10:30:38 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:30:38 EST -0500 | + df -h
+08/15/23 10:30:38 EST -0500 | + grep /data
+08/15/23 10:30:38 EST -0500 | /dev/sda1                           29G   75M   28G   1% /data
+08/15/23 10:30:38 EST -0500 | + echo '#####  End  #####'
+08/15/23 10:30:38 EST -0500 | #####  End  #####
+08/15/23 10:30:38 EST -0500 | + exec
