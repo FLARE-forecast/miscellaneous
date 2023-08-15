@@ -29484,3 +29484,94 @@ c"
 2023/08/15 14:18:48 autossh[16740]: clear alarm timer (0 secs left)
 2023/08/15 14:18:48 autossh[16740]: set alarm for 600 secs
 2023/08/15 14:18:48 autossh[3579141]: child of 16740 execing /usr/bin/ssh
+2023/08/15 14:28:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 14:28:48 autossh[16740]: not what I sent: "carina autossh 16740 2068937386 
+" : ""
+2023/08/15 14:28:48 autossh[16740]: not what I sent: "carina autossh 16740 2068937386 
+" : ""
+2023/08/15 14:28:48 autossh[16740]: tried connection 3 times and failed
+2023/08/15 14:28:48 autossh[16740]: port down, restarting ssh
+2023/08/15 14:28:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:28:48 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 14:28:48 autossh[16740]: starting ssh (count 167)
+2023/08/15 14:28:48 autossh[16740]: ssh child pid is 3600869
+2023/08/15 14:28:48 autossh[16740]: check on child 3600869
+2023/08/15 14:28:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:28:48 autossh[16740]: set alarm for 600 secs
+2023/08/15 14:28:48 autossh[3600869]: child of 16740 execing /usr/bin/ssh
+2023/08/15 14:38:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 14:38:48 autossh[16740]: not what I sent: "carina autossh 16740 1640344358 
+" : ""
+2023/08/15 14:38:48 autossh[16740]: not what I sent: "carina autossh 16740 1640344358 
+" : ""
+2023/08/15 14:38:48 autossh[16740]: tried connection 3 times and failed
+2023/08/15 14:38:48 autossh[16740]: port down, restarting ssh
+2023/08/15 14:38:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:38:48 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 14:38:48 autossh[16740]: starting ssh (count 168)
+2023/08/15 14:38:48 autossh[16740]: ssh child pid is 3621442
+2023/08/15 14:38:48 autossh[16740]: check on child 3621442
+2023/08/15 14:38:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:38:48 autossh[16740]: set alarm for 600 secs
+2023/08/15 14:38:48 autossh[3621442]: child of 16740 execing /usr/bin/ssh
+2023/08/15 14:48:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 14:48:48 autossh[16740]: not what I sent: "carina autossh 16740 1790850214 
+" : ""
+2023/08/15 14:48:48 autossh[16740]: not what I sent: "carina autossh 16740 1790850214 
+" : ""
+2023/08/15 14:48:48 autossh[16740]: tried connection 3 times and failed
+2023/08/15 14:48:48 autossh[16740]: port down, restarting ssh
+2023/08/15 14:48:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:48:48 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 14:48:48 autossh[16740]: starting ssh (count 169)
+2023/08/15 14:48:48 autossh[16740]: ssh child pid is 3642015
+2023/08/15 14:48:48 autossh[16740]: check on child 3642015
+2023/08/15 14:48:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:48:48 autossh[16740]: set alarm for 600 secs
+2023/08/15 14:48:48 autossh[3642015]: child of 16740 execing /usr/bin/ssh
+2023/08/15 14:58:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 14:58:48 autossh[16740]: not what I sent: "carina autossh 16740 1937747652 
+" : ""
+2023/08/15 14:58:48 autossh[16740]: not what I sent: "carina autossh 16740 1937747652 
+" : ""
+2023/08/15 14:58:48 autossh[16740]: tried connection 3 times and failed
+2023/08/15 14:58:48 autossh[16740]: port down, restarting ssh
+2023/08/15 14:58:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:58:48 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 14:58:48 autossh[16740]: starting ssh (count 170)
+2023/08/15 14:58:48 autossh[16740]: ssh child pid is 3662604
+2023/08/15 14:58:48 autossh[16740]: check on child 3662604
+2023/08/15 14:58:48 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 14:58:48 autossh[16740]: set alarm for 600 secs
+2023/08/15 14:58:48 autossh[3662604]: child of 16740 execing /usr/bin/ssh
+2023/08/15 15:08:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 15:08:48 autossh[16740]: not what I sent: "carina autossh 16740 533225661 
+" : ""
+2023/08/15 15:08:55 autossh[16740]: not what I sent: "carina autossh 16740 533225661 
+" : ""
+2023/08/15 15:08:55 autossh[16740]: tried connection 3 times and failed
+2023/08/15 15:08:55 autossh[16740]: port down, restarting ssh
+2023/08/15 15:08:55 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 15:08:55 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 15:08:55 autossh[16740]: starting ssh (count 171)
+2023/08/15 15:08:55 autossh[16740]: ssh child pid is 3683376
+2023/08/15 15:08:55 autossh[16740]: check on child 3683376
+2023/08/15 15:08:55 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 15:08:55 autossh[16740]: set alarm for 600 secs
+2023/08/15 15:08:55 autossh[3683376]: child of 16740 execing /usr/bin/ssh
+2023/08/15 15:18:55 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 15:18:55 autossh[16740]: not what I sent: "carina autossh 16740 356654416 
+" : "carina autossh 16740 533225661 
+"
+2023/08/15 15:18:55 autossh[16740]: not what I sent: "carina autossh 16740 356654416 
+" : ""
+2023/08/15 15:18:55 autossh[16740]: tried connection 3 times and failed
+2023/08/15 15:18:55 autossh[16740]: port down, restarting ssh
+2023/08/15 15:18:55 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 15:18:55 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 15:18:55 autossh[16740]: starting ssh (count 172)
+2023/08/15 15:18:55 autossh[16740]: ssh child pid is 3703959
+2023/08/15 15:18:55 autossh[16740]: check on child 3703959
+2023/08/15 15:18:55 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 15:18:55 autossh[16740]: set alarm for 600 secs
+2023/08/15 15:18:55 autossh[3703959]: child of 16740 execing /usr/bin/ssh
