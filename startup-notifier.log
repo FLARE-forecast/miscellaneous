@@ -24,3 +24,12 @@ To github.com:FLARE-forecast/miscellaneous.git
 Current branch startup-notifier is up to date.
 To github.com:FLARE-forecast/miscellaneous.git
    8fceb55..3e07d0e  startup-notifier -> startup-notifier
+08/15/23 17:08:47 EST -0500 | ##### Start #####
+08/15/23 17:08:47 EST -0500 | /home/ubuntu/miscellaneous/gateways/system-monitors/startup-notifier.sh: line 25: cd: /home/ubuntu/miscellaneous/startup-notifier/carina: No such file or directory
+08/15/23 17:12:02 EST -0500 | ##### Start #####
+08/15/23 17:12:02 EST -0500 | [startup-notifier d231b5f] 08/15/23 17:12:02 EST -0500
+08/15/23 17:12:02 EST -0500 |  1 file changed, 1 insertion(+), 1 deletion(-)
+08/15/23 17:12:03 EST -0500 | Current branch startup-notifier is up to date.
+08/15/23 17:12:03 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/15/23 17:12:03 EST -0500 |    3e07d0e..d231b5f  startup-notifier -> startup-notifier
+08/15/23 17:12:03 EST -0500 | #####  End  #####

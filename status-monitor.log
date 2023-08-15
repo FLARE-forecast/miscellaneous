@@ -4279,3 +4279,65 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
 rtt min/avg/max/mdev = 7.267/8.472/9.286/0.869 ms
+08/15/23 17:15:34 EST -0500 | ##### Start #####
+08/15/23 17:15:34 EST -0500 |  17:15:34 up 1 day,  6:56,  0 users,  load average: 0.34, 0.45, 0.43
+08/15/23 17:15:34 EST -0500 | 
+08/15/23 17:15:34 EST -0500 | 
+08/15/23 17:15:34 EST -0500 | reboot   system boot  5.15.0-76-generi Mon Aug 14 10:19   still running
+08/15/23 17:15:34 EST -0500 | reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18 - 07:25 (4+21:07)
+08/15/23 17:15:34 EST -0500 | reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+08/15/23 17:15:34 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+08/15/23 17:15:34 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+08/15/23 17:15:34 EST -0500 | 
+08/15/23 17:15:34 EST -0500 | 
+08/15/23 17:16:21 EST -0500 | + echo '##### Start #####'
+08/15/23 17:16:21 EST -0500 | ##### Start #####
+08/15/23 17:16:21 EST -0500 | + check_if_enabled status_monitor
+08/15/23 17:16:21 EST -0500 | + module_enabled_var=status_monitor_enabled
+08/15/23 17:16:21 EST -0500 | + '[' true '!=' true ']'
+08/15/23 17:16:21 EST -0500 | + uptime
+08/15/23 17:16:21 EST -0500 |  17:16:21 up 1 day,  6:56,  0 users,  load average: 0.58, 0.51, 0.45
+08/15/23 17:16:21 EST -0500 | + echo -e '\n'
+08/15/23 17:16:21 EST -0500 | 
+08/15/23 17:16:21 EST -0500 | 
+08/15/23 17:16:21 EST -0500 | + head -n 5
+08/15/23 17:16:21 EST -0500 | + /usr/bin/last reboot
+08/15/23 17:16:21 EST -0500 | reboot   system boot  5.15.0-76-generi Mon Aug 14 10:19   still running
+08/15/23 17:16:21 EST -0500 | reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18 - 07:25 (4+21:07)
+08/15/23 17:16:21 EST -0500 | reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+08/15/23 17:16:21 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+08/15/23 17:16:21 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+08/15/23 17:16:21 EST -0500 | + echo -e '\n'
+08/15/23 17:16:21 EST -0500 | 
+08/15/23 17:16:21 EST -0500 | 
+08/15/23 17:16:21 EST -0500 | + /usr/bin/lsusb
+08/15/23 17:16:21 EST -0500 | + grep Novatel
+08/15/23 17:18:25 EST -0500 | ##### Start #####
+08/15/23 17:18:25 EST -0500 |  17:18:25 up 1 day,  6:58,  0 users,  load average: 0.40, 0.49, 0.45
+08/15/23 17:18:25 EST -0500 | reboot   system boot  5.15.0-76-generi Mon Aug 14 10:19   still running
+08/15/23 17:18:25 EST -0500 | reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18 - 07:25 (4+21:07)
+08/15/23 17:18:25 EST -0500 | reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+08/15/23 17:18:25 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+08/15/23 17:18:25 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+08/15/23 17:18:58 EST -0500 | ##### Start #####
+08/15/23 17:18:58 EST -0500 |  17:18:58 up 1 day,  6:59,  0 users,  load average: 0.30, 0.45, 0.44
+08/15/23 17:18:58 EST -0500 | reboot   system boot  5.15.0-76-generi Mon Aug 14 10:19   still running
+08/15/23 17:18:58 EST -0500 | reboot   system boot  5.15.0-76-generi Fri Aug  4 10:18 - 07:25 (4+21:07)
+08/15/23 17:18:58 EST -0500 | reboot   system boot  5.15.0-76-generi Sat Jul 15 10:35 - 15:21 (5+04:45)
+08/15/23 17:18:58 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:43 - 10:35 (1+12:51)
+08/15/23 17:18:58 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Jul 13 21:36 - 21:42  (00:05)
+08/15/23 17:18:58 EST -0500 | [111563.371265] device enp2s0 entered promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111563.396816] device enp2s0 left promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111564.350272] device nebula1 entered promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111564.373338] device nebula1 left promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111564.395112] device enp2s0 entered promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111564.429537] device enp2s0 left promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111565.371532] device nebula1 entered promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111565.404738] device nebula1 left promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111565.414909] device enp2s0 entered promiscuous mode
+08/15/23 17:18:58 EST -0500 | [111565.464940] device enp2s0 left promiscuous mode
+08/15/23 17:18:58 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/15/23 17:18:58 EST -0500 | /dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+08/15/23 17:18:58 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/15/23 17:18:58 EST -0500 | /dev/sda1                           29G   94M   28G   1% /data
+08/15/23 17:18:58 EST -0500 | tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
