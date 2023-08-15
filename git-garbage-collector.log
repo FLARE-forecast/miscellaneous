@@ -717,3 +717,10 @@ Disk Usage After Git Garbage Collector:
 08/15/23 10:44:58 EST -0500 | Disk Usage After Git Garbage Collector:
 08/15/23 10:44:58 EST -0500 | /dev/sda1                           29G   83M   28G   1% /data
 08/15/23 10:44:58 EST -0500 | #####  End  #####
+08/15/23 10:56:12 EST -0500 | ##### Start #####
+08/15/23 10:56:12 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 10:56:12 EST -0500 | /dev/sda1                           29G   87M   28G   1% /data
+08/15/23 10:56:12 EST -0500 | Working on: /data/datalogger-data
+08/15/23 10:56:13 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 10:56:13 EST -0500 | /dev/sda1                           29G   86M   28G   1% /data
+08/15/23 10:56:13 EST -0500 | #####  End  #####

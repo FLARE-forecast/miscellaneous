@@ -29185,3 +29185,36 @@ c"
 2023/08/15 10:47:48 autossh[16740]: clear alarm timer (0 secs left)
 2023/08/15 10:47:48 autossh[16740]: set alarm for 600 secs
 2023/08/15 10:47:48 autossh[3127392]: child of 16740 execing /usr/bin/ssh
+2023/08/15 10:57:48 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 10:58:03 autossh[16740]: timeout polling to accept read connection
+2023/08/15 10:58:03 autossh[16740]: port down, restarting ssh
+2023/08/15 10:58:03 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 10:58:03 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 10:58:03 autossh[16740]: starting ssh (count 146)
+2023/08/15 10:58:03 autossh[16740]: ssh child pid is 3151590
+2023/08/15 10:58:03 autossh[16740]: check on child 3151590
+2023/08/15 10:58:03 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 10:58:03 autossh[16740]: set alarm for 600 secs
+2023/08/15 10:58:03 autossh[3151590]: child of 16740 execing /usr/bin/ssh
+2023/08/15 11:08:03 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 11:08:18 autossh[16740]: timeout polling to accept read connection
+2023/08/15 11:08:18 autossh[16740]: port down, restarting ssh
+2023/08/15 11:08:18 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 11:08:18 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 11:08:18 autossh[16740]: starting ssh (count 147)
+2023/08/15 11:08:18 autossh[16740]: ssh child pid is 3172733
+2023/08/15 11:08:18 autossh[16740]: check on child 3172733
+2023/08/15 11:08:18 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 11:08:18 autossh[16740]: set alarm for 600 secs
+2023/08/15 11:08:18 autossh[3172733]: child of 16740 execing /usr/bin/ssh
+2023/08/15 11:18:18 autossh[16740]: received SIGALRM (end-of-life 0)
+2023/08/15 11:18:33 autossh[16740]: timeout polling to accept read connection
+2023/08/15 11:18:33 autossh[16740]: port down, restarting ssh
+2023/08/15 11:18:33 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 11:18:33 autossh[16740]: checking for grace period, tries = 0
+2023/08/15 11:18:33 autossh[16740]: starting ssh (count 148)
+2023/08/15 11:18:33 autossh[16740]: ssh child pid is 3195138
+2023/08/15 11:18:33 autossh[16740]: check on child 3195138
+2023/08/15 11:18:33 autossh[16740]: clear alarm timer (0 secs left)
+2023/08/15 11:18:33 autossh[16740]: set alarm for 600 secs
+2023/08/15 11:18:33 autossh[3195138]: child of 16740 execing /usr/bin/ssh
