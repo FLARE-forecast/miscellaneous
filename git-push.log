@@ -2559,3 +2559,20 @@ nothing to commit, working tree clean
 08/15/23 11:20:03 EST -0500 |    b9ed0ef..b3a7387  b3a73870c735691ff79e5262e0d54294dd57b719 -> datalogger-mock-data
 08/15/23 11:20:03 EST -0500 | #####  End  #####
 08/15/23 11:20:03 EST -0500 | ##### Start #####
+08/15/23 11:20:07 EST -0500 | [carina-logs cb136bd] 08/15/23 11:20:03 EST -0500
+08/15/23 11:20:07 EST -0500 |  6 files changed, 10921 insertions(+)
+08/15/23 11:20:12 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+08/15/23 11:20:12 EST -0500 | remote: warning: File network-interface-monitor.log is 65.90 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+08/15/23 11:20:12 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+08/15/23 11:20:12 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/15/23 11:20:12 EST -0500 |    37bddea..cb136bd  cb136bd65079c9bc8eb9b8a1d3cb83475537d621 -> carina-logs
+08/15/23 11:20:12 EST -0500 | #####  End  #####
+08/15/23 12:20:01 EST -0500 | ##### Start #####
+08/15/23 12:20:01 EST -0500 | ##### Start #####
+08/15/23 12:20:01 EST -0500 | fatal: not a git repository (or any of the parent directories): .git
+08/15/23 12:20:01 EST -0500 | [datalogger-mock-data a83206f] 08/15/23 12:20:01 EST -0500
+08/15/23 12:20:01 EST -0500 |  1 file changed, 6 insertions(+)
+08/15/23 12:20:02 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/15/23 12:20:02 EST -0500 |    b3a7387..a83206f  a83206f3c90a9a31454fb7c694d75c10f40922d4 -> datalogger-mock-data
+08/15/23 12:20:02 EST -0500 | #####  End  #####
+08/15/23 12:20:03 EST -0500 | ##### Start #####
