@@ -641,3 +641,11 @@ Disk Usage After Git Garbage Collector:
 08/15/23 00:20:21 EST -0500 | Disk Usage After Git Garbage Collector:
 08/15/23 00:20:21 EST -0500 | /dev/sda1                           29G   48M   28G   1% /data
 08/15/23 00:20:21 EST -0500 | #####  End  #####
+08/15/23 06:20:12 EST -0500 | ##### Start #####
+08/15/23 06:20:12 EST -0500 | Disk Usage Before Git Garbage Collector:
+08/15/23 06:20:12 EST -0500 | /dev/sda1                           29G   68M   28G   1% /data
+08/15/23 06:20:12 EST -0500 | Working on: /data/datalogger-mock-data
+08/15/23 06:20:12 EST -0500 | Working on: /data/carina-logs
+08/15/23 06:20:16 EST -0500 | Disk Usage After Git Garbage Collector:
+08/15/23 06:20:16 EST -0500 | /dev/sda1                           29G   64M   28G   1% /data
+08/15/23 06:20:16 EST -0500 | #####  End  #####
