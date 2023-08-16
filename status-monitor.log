@@ -5445,3 +5445,83 @@ rtt min/avg/max/mdev = 7.267/8.472/9.286/0.869 ms
 08/16/23 12:44:21 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
 08/16/23 12:44:21 EST -0500 | rtt min/avg/max/mdev = 7.328/8.348/9.228/0.781 ms
 08/16/23 12:44:21 EST -0500 | #####  End  #####
+08/16/23 12:53:56 EST -0500 | ##### Start #####
+08/16/23 12:53:56 EST -0500 |  12:53:56 up 1 min,  0 users,  load average: 0.34, 0.15, 0.05
+08/16/23 12:53:56 EST -0500 | reboot   system boot  5.15.0-76-generi Wed Aug 16 12:52   still running
+08/16/23 12:53:56 EST -0500 | reboot   system boot  5.15.0-76-generi Wed Aug 16 12:43 - 12:52  (00:08)
+08/16/23 12:53:56 EST -0500 | reboot   system boot  5.15.0-76-generi Wed Aug 16 12:34 - 12:42  (00:07)
+08/16/23 12:53:56 EST -0500 | reboot   system boot  5.15.0-76-generi Wed Aug 16 12:29 - 12:33  (00:04)
+08/16/23 12:53:56 EST -0500 | reboot   system boot  5.15.0-76-generi Wed Aug 16 12:21 - 12:28  (00:07)
+08/16/23 12:53:56 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/16/23 12:53:56 EST -0500 | Bus 001 Device 003: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/16/23 12:53:56 EST -0500 | Bus 001 Device 002: ID 04b4:6570 Cypress Semiconductor Corp. Unprogrammed CY7C65632/34 hub HX2VL
+08/16/23 12:53:56 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/16/23 12:53:56 EST -0500 | [   68.816460] device enp2s0 entered promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   68.842573] device enp2s0 left promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   69.828936] device enp2s0 entered promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   69.858637] device enp2s0 left promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   70.843081] device enp2s0 entered promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   70.890491] device enp2s0 left promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   71.857720] device enp2s0 entered promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   71.902314] device enp2s0 left promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   72.518383] device nebula1 entered promiscuous mode
+08/16/23 12:53:56 EST -0500 | [   72.534148] device nebula1 left promiscuous mode
+08/16/23 12:53:56 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/16/23 12:53:56 EST -0500 | tmpfs                              179M  1.2M  178M   1% /run
+08/16/23 12:53:56 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   28G  6.9G   20G  27% /
+08/16/23 12:53:56 EST -0500 | tmpfs                              894M     0  894M   0% /dev/shm
+08/16/23 12:53:56 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/16/23 12:53:56 EST -0500 | /dev/sda1                           29G  114M   28G   1% /data
+08/16/23 12:53:56 EST -0500 | /dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+08/16/23 12:53:56 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/16/23 12:53:56 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/16/23 12:53:56 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/16/23 12:53:56 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/16/23 12:53:56 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:56 EST -0500 |     inet6 ::1/128 scope host 
+08/16/23 12:53:56 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:56 EST -0500 | 2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/16/23 12:53:56 EST -0500 |     link/ether 00:01:c0:1f:d4:0f brd ff:ff:ff:ff:ff:ff
+08/16/23 12:53:57 EST -0500 |     inet 192.168.1.171/24 metric 100 brd 192.168.1.255 scope global dynamic enp2s0
+08/16/23 12:53:57 EST -0500 |        valid_lft 86346sec preferred_lft 86346sec
+08/16/23 12:53:57 EST -0500 |     inet6 2600:4041:202f:9100:201:c0ff:fe1f:d40f/64 scope global dynamic mngtmpaddr noprefixroute 
+08/16/23 12:53:57 EST -0500 |        valid_lft 7143sec preferred_lft 7143sec
+08/16/23 12:53:57 EST -0500 |     inet6 fe80::201:c0ff:fe1f:d40f/64 scope link 
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/16/23 12:53:57 EST -0500 |     link/ether 00:01:c0:1f:d4:19 brd ff:ff:ff:ff:ff:ff
+08/16/23 12:53:57 EST -0500 |     altname enp3s0
+08/16/23 12:53:57 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 |     inet6 fe80::201:c0ff:fe1f:d419/64 scope link 
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 | 4: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/16/23 12:53:57 EST -0500 |     link/ether 60:f6:77:df:22:cb brd ff:ff:ff:ff:ff:ff
+08/16/23 12:53:57 EST -0500 | 5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/16/23 12:53:57 EST -0500 |     link/ether 02:42:69:97:24:ca brd ff:ff:ff:ff:ff:ff
+08/16/23 12:53:57 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 | 6: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/16/23 12:53:57 EST -0500 |     link/none 
+08/16/23 12:53:57 EST -0500 |     inet 10.10.200.2/24 scope global nebula1
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 |     inet6 fe80::911:b1e6:bdb4:1231/64 scope link stable-privacy 
+08/16/23 12:53:57 EST -0500 |        valid_lft forever preferred_lft forever
+08/16/23 12:53:57 EST -0500 | tail: cannot open '/var/log/vsftpd.log' for reading: No such file or directory
+08/16/23 12:53:57 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/16/23 12:53:57 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=51 time=8.87 ms
+08/16/23 12:53:57 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=51 time=8.07 ms
+08/16/23 12:53:58 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=51 time=11.2 ms
+08/16/23 12:53:58 EST -0500 | 
+08/16/23 12:53:58 EST -0500 | --- github.com ping statistics ---
+08/16/23 12:53:58 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+08/16/23 12:53:58 EST -0500 | rtt min/avg/max/mdev = 8.069/9.366/11.156/1.307 ms
+08/16/23 12:53:58 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/16/23 12:53:58 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=60 time=4.76 ms
+08/16/23 12:53:59 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=60 time=7.38 ms
+08/16/23 12:54:00 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=60 time=8.75 ms
+08/16/23 12:54:00 EST -0500 | 
+08/16/23 12:54:00 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/16/23 12:54:01 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+08/16/23 12:54:01 EST -0500 | rtt min/avg/max/mdev = 4.762/6.963/8.749/1.654 ms
+08/16/23 12:54:01 EST -0500 | #####  End  #####
