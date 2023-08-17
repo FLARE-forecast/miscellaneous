@@ -2875,3 +2875,44 @@ nothing to commit, working tree clean
 08/16/23 21:20:02 EST -0500 |    f8c62bf..7833701  78337013086f2a4e3aed97037fd837a046b17938 -> datalogger-mock-data
 08/16/23 21:20:02 EST -0500 | ##########  END  ##########
 08/16/23 21:20:03 EST -0500 | ########## START ##########
+08/16/23 21:20:03 EST -0500 | [carina-logs b3e4021] 08/16/23 21:20:03 EST -0500
+08/16/23 21:20:03 EST -0500 |  1 file changed, 12 insertions(+)
+08/16/23 21:20:03 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/16/23 21:20:03 EST -0500 |    92420d5..b3e4021  b3e40215731e83dece9bad99b7f9b49c1c290234 -> carina-logs
+08/16/23 21:20:03 EST -0500 | ##########  END  ##########
+08/16/23 22:08:06 EST -0500 | ########## START ##########
+08/16/23 22:08:06 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 31: cd: Usage:: No such file or directory
+08/16/23 22:08:06 EST -0500 | ##########  END  ##########
+08/16/23 22:08:30 EST -0500 | + echo '########## START ##########'
+08/16/23 22:08:30 EST -0500 | ########## START ##########
+08/16/23 22:08:30 EST -0500 | + IFS=' '
+08/16/23 22:08:30 EST -0500 | + read -ra dir_array
+08/16/23 22:08:30 EST -0500 | + for dir in "${dir_array[@]}"
+08/16/23 22:08:30 EST -0500 | ++ date '+%D %T %Z %z'
+08/16/23 22:08:30 EST -0500 | + timestamp='08/16/23 22:08:30 EST -0500'
+08/16/23 22:08:30 EST -0500 | + cd Usage:
+08/16/23 22:08:30 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 31: cd: Usage:: No such file or directory
+08/16/23 22:08:30 EST -0500 | + continue
+08/16/23 22:08:30 EST -0500 | + echo '##########  END  ##########'
+08/16/23 22:08:30 EST -0500 | ##########  END  ##########
+08/16/23 22:08:30 EST -0500 | + exec
+08/16/23 22:10:48 EST -0500 | ########## START ##########
+08/16/23 22:10:48 EST -0500 | ##################### Usage:
+08/16/23 22:10:48 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 32: cd: Usage:: No such file or directory
+08/16/23 22:10:48 EST -0500 | ##########  END  ##########
+08/16/23 22:12:05 EST -0500 | ########## START ##########
+08/16/23 22:12:05 EST -0500 | ########################### Usage:
+08/16/23 22:12:05 EST -0500 | ##################### Usage:
+08/16/23 22:12:05 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 32: cd: Usage:: No such file or directory
+08/16/23 22:12:05 EST -0500 | ##########  END  ##########
+08/16/23 22:12:27 EST -0500 | ########## START ##########
+08/16/23 22:12:27 EST -0500 | ########################### Usage:
+08/16/23 22:12:27 EST -0500 | ##################### Usage:
+08/16/23 22:12:27 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 32: cd: Usage:: No such file or directory
+08/16/23 22:12:27 EST -0500 | ##########  END  ##########
+08/16/23 22:13:04 EST -0500 | ########## START ##########
+08/16/23 22:13:04 EST -0500 | ########################### Usage:
+08/16/23 22:13:04 EST -0500 | ##################### Usage:
+08/16/23 22:13:04 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 32: cd: Usage:: No such file or directory
+08/16/23 22:13:04 EST -0500 | ##########  END  ##########
+08/16/23 22:17:29 EST -0500 | ########## START ##########
