@@ -3065,3 +3065,133 @@ nothing to commit, working tree clean
 08/17/23 08:20:03 EST -0500 |    43eb771..fb81c8e  fb81c8e91ca94cef99be5c73ae84307abf3f2767 -> datalogger-mock-data
 08/17/23 08:20:03 EST -0500 | ##########  END  ##########
 08/17/23 08:20:04 EST -0500 | ########## START ##########
+08/17/23 08:20:04 EST -0500 | ########################### /data/carina-logs /data/datalogger-mock-data
+08/17/23 08:20:04 EST -0500 | ##################### /data/carina-logs
+08/17/23 08:20:04 EST -0500 | [carina-logs 39f1bba] 08/17/23 08:20:04 EST -0500
+08/17/23 08:20:04 EST -0500 |  1 file changed, 14 insertions(+)
+08/17/23 08:20:04 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/17/23 08:20:04 EST -0500 |    2a20eef..39f1bba  39f1bbac93381dfd46a8a298d7ab53d38bb16db0 -> carina-logs
+08/17/23 08:20:04 EST -0500 | ##################### /data/datalogger-mock-data
+08/17/23 08:20:04 EST -0500 | On branch datalogger-mock-data
+08/17/23 08:20:04 EST -0500 | Your branch is up to date with 'origin/datalogger-mock-data'.
+08/17/23 08:20:04 EST -0500 | 
+08/17/23 08:20:04 EST -0500 | nothing to commit, working tree clean
+08/17/23 08:20:04 EST -0500 | ##########  END  ##########
+08/17/23 08:22:36 EST -0500 | ########## START ##########
+08/17/23 08:22:36 EST -0500 | Directories are: /data/carina-logs /data/datalogger-mock-data
+08/17/23 08:22:36 EST -0500 | ##################### /data/carina-logs /data/datalogger-mock-data
+08/17/23 08:22:36 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 33: cd: /data/carina-logs /data/datalogger-mock-data: No such file or directory
+08/17/23 08:22:36 EST -0500 | ##########  END  ##########
+08/17/23 08:22:59 EST -0500 | ########## START ##########
+08/17/23 08:22:59 EST -0500 | Directories are: Usage:   yq eval [expression] [yaml_file1]... [flags]  Aliases:   eval, e  Examples:  # Reads field under the given path for each file yq e '.a.b' f1.yml f2.yml   # Prints out the file yq e sample.yaml   # Pipe from STDIN ## use '-' as a filename to pipe from STDIN cat file2.yml | yq e '.a.b' file1.yml - file3.yml  # Creates a new yaml document ## Note that editing an empty file does not work. yq e -n '.a.b.c = "cat"'   # Update a file inplace yq e '.a.b = "cool"' -i file.yaml    Flags:   -h, --help   help for eval  Global Flags:   -C, --colors                        force print with colors   -e, --exit-status                   set exit status if there are no matches or null or false is returned       --expression string             forcibly set the expression argument. Useful when yq argument detection thinks your expression is a file.       --from-file string              Load expression from specified file.   -f, --front-matter string           (extract|process) first input as yaml front-matter. Extract will pull out the yaml content, process will run the expression against the yaml content, leaving the remaining data intact       --header-preprocess             Slurp any header comments and separators before processing expression. (default true)   -I, --indent int                    sets indent level for output (default 2)   -i, --inplace                       update the file inplace of first file given.   -p, --input-format string           [auto|a|yaml|y|props|p|xml|x|tsv|t|csv|c|toml] parse format for input. Note that json is a subset of yaml. (default "auto")   -M, --no-colors                     force print with no colors   -N, --no-doc                        Don't print document separators (---)   -0, --nul-output                    Use NUL char to separate values. If unwrap scalar is also set, fail if unwrapped scalar contains NUL char.   -n, --null-input                    Don't read input, simply evaluate the expression given. Useful for creating docs from scratch.   -o, --output-format string          [auto|a|yaml|y|json|j|props|p|xml|x|tsv|t|csv|c] output format type. (default "auto")   -P, --prettyPrint                   pretty print, shorthand for '... style = ""'   -s, --split-exp string              print each result (or doc) into a file named (exp). [exp] argument must return a string. You can use $index in the expression as the result counter.       --split-exp-file string         Use a file to specify the split-exp expression.   -r, --unwrapScalar                  unwrap scalar, print the value with no quotes, colors or comments. Defaults to true for yaml (default true)   -v, --verbose                       verbose mode       --xml-attribute-prefix string   prefix for xml attributes (default "+@")       --xml-content-name string       name for xml content (if no attribute name is present). (default "+content")       --xml-directive-name string     name for xml directives (e.g. <!DOCTYPE thing cat>) (default "+directive")       --xml-keep-namespace            enables keeping namespace after parsing attributes (default true)       --xml-proc-inst-prefix string   prefix for xml processing instructions (e.g. <?xml version="1"?>) (default "+p_")       --xml-raw-token                 enables using RawToken method instead Token. Commonly disables namespace translations. See https://pkg.go.dev/encoding/xml#Decoder.RawToken for details. (default true)       --xml-skip-directives           skip over directives (e.g. <!DOCTYPE thing cat>)       --xml-skip-proc-inst            skip over process instructions (e.g. <?xml version="1"?>)       --xml-strict-mode               enables strict parsing of XML. See https://pkg.go.dev/encoding/xml for more details.
+08/17/23 08:22:59 EST -0500 | ##################### Usage:
+08/17/23 08:22:59 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 33: cd: Usage:: No such file or directory
+08/17/23 08:23:00 EST -0500 | #####################   yq eval [expression] [yaml_file1]... [flags]
+08/17/23 08:23:00 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 33: cd:   yq eval [expression] [yaml_file1]... [flags]: No such file or directory
+08/17/23 08:23:00 EST -0500 | ##################### 
+08/17/23 08:23:00 EST -0500 | [main fb24033] 08/17/23 08:22:59 EST -0500
+08/17/23 08:23:00 EST -0500 |  5 files changed, 122 insertions(+), 97 deletions(-)
+08/17/23 08:23:00 EST -0500 |  create mode 100644 .gitignore
+08/17/23 08:23:00 EST -0500 |  create mode 100755 gateways/base/utils.sh
+08/17/23 08:23:00 EST -0500 |  rewrite gateways/system-monitors/network-interface-monitor.sh (65%)
+08/17/23 08:25:42 EST -0500 | ########## START ##########
+08/17/23 08:25:42 EST -0500 | Read directories: Usage:   yq eval [expression] [yaml_file1]... [flags]  Aliases:   eval, e  Examples:  # Reads field under the given path for each file yq e '.a.b' f1.yml f2.yml   # Prints out the file yq e sample.yaml   # Pipe from STDIN ## use '-' as a filename to pipe from STDIN cat file2.yml | yq e '.a.b' file1.yml - file3.yml  # Creates a new yaml document ## Note that editing an empty file does not work. yq e -n '.a.b.c = "cat"'   # Update a file inplace yq e '.a.b = "cool"' -i file.yaml    Flags:   -h, --help   help for eval  Global Flags:   -C, --colors                        force print with colors   -e, --exit-status                   set exit status if there are no matches or null or false is returned       --expression string             forcibly set the expression argument. Useful when yq argument detection thinks your expression is a file.       --from-file string              Load expression from specified file.   -f, --front-matter string           (extract|process) first input as yaml front-matter. Extract will pull out the yaml content, process will run the expression against the yaml content, leaving the remaining data intact       --header-preprocess             Slurp any header comments and separators before processing expression. (default true)   -I, --indent int                    sets indent level for output (default 2)   -i, --inplace                       update the file inplace of first file given.   -p, --input-format string           [auto|a|yaml|y|props|p|xml|x|tsv|t|csv|c|toml] parse format for input. Note that json is a subset of yaml. (default "auto")   -M, --no-colors                     force print with no colors   -N, --no-doc                        Don't print document separators (---)   -0, --nul-output                    Use NUL char to separate values. If unwrap scalar is also set, fail if unwrapped scalar contains NUL char.   -n, --null-input                    Don't read input, simply evaluate the expression given. Useful for creating docs from scratch.   -o, --output-format string          [auto|a|yaml|y|json|j|props|p|xml|x|tsv|t|csv|c] output format type. (default "auto")   -P, --prettyPrint                   pretty print, shorthand for '... style = ""'   -s, --split-exp string              print each result (or doc) into a file named (exp). [exp] argument must return a string. You can use $index in the expression as the result counter.       --split-exp-file string         Use a file to specify the split-exp expression.   -r, --unwrapScalar                  unwrap scalar, print the value with no quotes, colors or comments. Defaults to true for yaml (default true)   -v, --verbose                       verbose mode       --xml-attribute-prefix string   prefix for xml attributes (default "+@")       --xml-content-name string       name for xml content (if no attribute name is present). (default "+content")       --xml-directive-name string     name for xml directives (e.g. <!DOCTYPE thing cat>) (default "+directive")       --xml-keep-namespace            enables keeping namespace after parsing attributes (default true)       --xml-proc-inst-prefix string   prefix for xml processing instructions (e.g. <?xml version="1"?>) (default "+p_")       --xml-raw-token                 enables using RawToken method instead Token. Commonly disables namespace translations. See https://pkg.go.dev/encoding/xml#Decoder.RawToken for details. (default true)       --xml-skip-directives           skip over directives (e.g. <!DOCTYPE thing cat>)       --xml-skip-proc-inst            skip over process instructions (e.g. <?xml version="1"?>)       --xml-strict-mode               enables strict parsing of XML. See https://pkg.go.dev/encoding/xml for more details.
+08/17/23 08:25:42 EST -0500 | Processing directory: Usage:
+08/17/23 08:25:42 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 35: cd: Usage:: No such file or directory
+08/17/23 08:25:42 EST -0500 | Processing directory:   yq eval [expression] [yaml_file1]... [flags]
+08/17/23 08:25:42 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 35: cd:   yq eval [expression] [yaml_file1]... [flags]: No such file or directory
+08/17/23 08:25:42 EST -0500 | Processing directory: 
+08/17/23 08:25:42 EST -0500 | On branch main
+08/17/23 08:25:42 EST -0500 | Your branch is ahead of 'origin/main' by 1 commit.
+08/17/23 08:25:42 EST -0500 |   (use "git push" to publish your local commits)
+08/17/23 08:25:42 EST -0500 | 
+08/17/23 08:25:42 EST -0500 | Changes not staged for commit:
+08/17/23 08:25:42 EST -0500 |   (use "git add/rm <file>..." to update what will be committed)
+08/17/23 08:25:42 EST -0500 |   (use "git restore <file>..." to discard changes in working directory)
+08/17/23 08:25:42 EST -0500 | 	modified:   ../../.gitignore
+08/17/23 08:25:42 EST -0500 | 	modified:   ../../README.md
+08/17/23 08:25:42 EST -0500 | 	modified:   ../base/utils.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../cron-jobs/non-root
+08/17/23 08:25:42 EST -0500 | 	modified:   ../data-tools/datalogger-mock-data-generator.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../git-maintenance/git-garbage-collector.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../git-maintenance/git-push.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../remote-access/reverse-ssh.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-monitors/health-checks-io.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-monitors/led-monitor.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-monitors/network-interface-monitor.sh
+08/17/23 08:25:42 EST -0500 | 	deleted:    ../system-monitors/ping-monitor.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-monitors/startup-notifier.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-monitors/status-monitor.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-setup/initializer.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-setup/led-off.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../system-setup/scheduler.sh
+08/17/23 08:25:42 EST -0500 | 	modified:   ../../lora/restart_lora_at_noevio_gateway.sh
+08/17/23 08:25:42 EST -0500 | 
+08/17/23 08:25:42 EST -0500 | no changes added to commit (use "git add" and/or "git commit -a")
+08/17/23 08:26:20 EST -0500 | + echo '########## START ##########'
+08/17/23 08:26:20 EST -0500 | ########## START ##########
+08/17/23 08:26:20 EST -0500 | + readarray -t dir_array
+08/17/23 08:26:20 EST -0500 | + echo 'Read directories: Usage:   yq eval [expression] [yaml_file1]... [flags]  Aliases:   eval, e  Examples:  # Reads field under the given path for each file yq e '\''.a.b'\'' f1.yml f2.yml   # Prints out the file yq e sample.yaml   # Pipe from STDIN ## use '\''-'\'' as a filename to pipe from STDIN cat file2.yml | yq e '\''.a.b'\'' file1.yml - file3.yml  # Creates a new yaml document ## Note that editing an empty file does not work. yq e -n '\''.a.b.c = "cat"'\''   # Update a file inplace yq e '\''.a.b = "cool"'\'' -i file.yaml    Flags:   -h, --help   help for eval  Global Flags:   -C, --colors                        force print with colors   -e, --exit-status                   set exit status if there are no matches or null or false is returned       --expression string             forcibly set the expression argument. Useful when yq argument detection thinks your expression is a file.       --from-file string              Load expression from specified file.   -f, --front-matter string           (extract|process) first input as yaml front-matter. Extract will pull out the yaml content, process will run the expression against the yaml content, leaving the remaining data intact       --header-preprocess             Slurp any header comments and separators before processing expression. (default true)   -I, --indent int                    sets indent level for output (default 2)   -i, --inplace                       update the file inplace of first file given.   -p, --input-format string           [auto|a|yaml|y|props|p|xml|x|tsv|t|csv|c|toml] parse format for input. Note that json is a subset of yaml. (default "auto")   -M, --no-colors                     force print with no colors   -N, --no-doc                        Don'\''t print document separators (---)   -0, --nul-output                    Use NUL char to separate values. If unwrap scalar is also set, fail if unwrapped scalar contains NUL char.   -n, --null-input                    Don'\''t read input, simply evaluate the expression given. Useful for creating docs from scratch.   -o, --output-format string          [auto|a|yaml|y|json|j|props|p|xml|x|tsv|t|csv|c] output format type. (default "auto")   -P, --prettyPrint                   pretty print, shorthand for '\''... style = ""'\''   -s, --split-exp string              print each result (or doc) into a file named (exp). [exp] argument must return a string. You can use $index in the expression as the result counter.       --split-exp-file string         Use a file to specify the split-exp expression.   -r, --unwrapScalar                  unwrap scalar, print the value with no quotes, colors or comments. Defaults to true for yaml (default true)   -v, --verbose                       verbose mode       --xml-attribute-prefix string   prefix for xml attributes (default "+@")       --xml-content-name string       name for xml content (if no attribute name is present). (default "+content")       --xml-directive-name string     name for xml directives (e.g. <!DOCTYPE thing cat>) (default "+directive")       --xml-keep-namespace            enables keeping namespace after parsing attributes (default true)       --xml-proc-inst-prefix string   prefix for xml processing instructions (e.g. <?xml version="1"?>) (default "+p_")       --xml-raw-token                 enables using RawToken method instead Token. Commonly disables namespace translations. See https://pkg.go.dev/encoding/xml#Decoder.RawToken for details. (default true)       --xml-skip-directives           skip over directives (e.g. <!DOCTYPE thing cat>)       --xml-skip-proc-inst            skip over process instructions (e.g. <?xml version="1"?>)       --xml-strict-mode               enables strict parsing of XML. See https://pkg.go.dev/encoding/xml for more details.'
+08/17/23 08:26:20 EST -0500 | Read directories: Usage:   yq eval [expression] [yaml_file1]... [flags]  Aliases:   eval, e  Examples:  # Reads field under the given path for each file yq e '.a.b' f1.yml f2.yml   # Prints out the file yq e sample.yaml   # Pipe from STDIN ## use '-' as a filename to pipe from STDIN cat file2.yml | yq e '.a.b' file1.yml - file3.yml  # Creates a new yaml document ## Note that editing an empty file does not work. yq e -n '.a.b.c = "cat"'   # Update a file inplace yq e '.a.b = "cool"' -i file.yaml    Flags:   -h, --help   help for eval  Global Flags:   -C, --colors                        force print with colors   -e, --exit-status                   set exit status if there are no matches or null or false is returned       --expression string             forcibly set the expression argument. Useful when yq argument detection thinks your expression is a file.       --from-file string              Load expression from specified file.   -f, --front-matter string           (extract|process) first input as yaml front-matter. Extract will pull out the yaml content, process will run the expression against the yaml content, leaving the remaining data intact       --header-preprocess             Slurp any header comments and separators before processing expression. (default true)   -I, --indent int                    sets indent level for output (default 2)   -i, --inplace                       update the file inplace of first file given.   -p, --input-format string           [auto|a|yaml|y|props|p|xml|x|tsv|t|csv|c|toml] parse format for input. Note that json is a subset of yaml. (default "auto")   -M, --no-colors                     force print with no colors   -N, --no-doc                        Don't print document separators (---)   -0, --nul-output                    Use NUL char to separate values. If unwrap scalar is also set, fail if unwrapped scalar contains NUL char.   -n, --null-input                    Don't read input, simply evaluate the expression given. Useful for creating docs from scratch.   -o, --output-format string          [auto|a|yaml|y|json|j|props|p|xml|x|tsv|t|csv|c] output format type. (default "auto")   -P, --prettyPrint                   pretty print, shorthand for '... style = ""'   -s, --split-exp string              print each result (or doc) into a file named (exp). [exp] argument must return a string. You can use $index in the expression as the result counter.       --split-exp-file string         Use a file to specify the split-exp expression.   -r, --unwrapScalar                  unwrap scalar, print the value with no quotes, colors or comments. Defaults to true for yaml (default true)   -v, --verbose                       verbose mode       --xml-attribute-prefix string   prefix for xml attributes (default "+@")       --xml-content-name string       name for xml content (if no attribute name is present). (default "+content")       --xml-directive-name string     name for xml directives (e.g. <!DOCTYPE thing cat>) (default "+directive")       --xml-keep-namespace            enables keeping namespace after parsing attributes (default true)       --xml-proc-inst-prefix string   prefix for xml processing instructions (e.g. <?xml version="1"?>) (default "+p_")       --xml-raw-token                 enables using RawToken method instead Token. Commonly disables namespace translations. See https://pkg.go.dev/encoding/xml#Decoder.RawToken for details. (default true)       --xml-skip-directives           skip over directives (e.g. <!DOCTYPE thing cat>)       --xml-skip-proc-inst            skip over process instructions (e.g. <?xml version="1"?>)       --xml-strict-mode               enables strict parsing of XML. See https://pkg.go.dev/encoding/xml for more details.
+08/17/23 08:26:20 EST -0500 | + for dir in "${dir_array[@]}"
+08/17/23 08:26:20 EST -0500 | ++ date '+%D %T %Z %z'
+08/17/23 08:26:20 EST -0500 | + timestamp='08/17/23 08:26:20 EST -0500'
+08/17/23 08:26:20 EST -0500 | + echo 'Processing directory: Usage:'
+08/17/23 08:26:20 EST -0500 | Processing directory: Usage:
+08/17/23 08:26:20 EST -0500 | + cd Usage:
+08/17/23 08:26:20 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 36: cd: Usage:: No such file or directory
+08/17/23 08:26:20 EST -0500 | + continue
+08/17/23 08:26:20 EST -0500 | + for dir in "${dir_array[@]}"
+08/17/23 08:26:20 EST -0500 | ++ date '+%D %T %Z %z'
+08/17/23 08:26:20 EST -0500 | + timestamp='08/17/23 08:26:20 EST -0500'
+08/17/23 08:26:20 EST -0500 | + echo 'Processing directory:   yq eval [expression] [yaml_file1]... [flags]'
+08/17/23 08:26:20 EST -0500 | Processing directory:   yq eval [expression] [yaml_file1]... [flags]
+08/17/23 08:26:20 EST -0500 | + cd '  yq eval [expression] [yaml_file1]... [flags]'
+08/17/23 08:26:20 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 36: cd:   yq eval [expression] [yaml_file1]... [flags]: No such file or directory
+08/17/23 08:26:20 EST -0500 | + continue
+08/17/23 08:26:20 EST -0500 | + for dir in "${dir_array[@]}"
+08/17/23 08:26:20 EST -0500 | ++ date '+%D %T %Z %z'
+08/17/23 08:26:20 EST -0500 | + timestamp='08/17/23 08:26:20 EST -0500'
+08/17/23 08:26:20 EST -0500 | + echo 'Processing directory: '
+08/17/23 08:26:20 EST -0500 | Processing directory: 
+08/17/23 08:26:20 EST -0500 | + cd ''
+08/17/23 08:26:20 EST -0500 | + git add .
+08/17/23 08:26:20 EST -0500 | + git commit -m '08/17/23 08:26:20 EST -0500'
+08/17/23 08:26:20 EST -0500 | On branch main
+08/17/23 08:26:20 EST -0500 | Your branch is ahead of 'origin/main' by 1 commit.
+08/17/23 08:26:20 EST -0500 |   (use "git push" to publish your local commits)
+08/17/23 08:26:20 EST -0500 | 
+08/17/23 08:26:20 EST -0500 | Changes not staged for commit:
+08/17/23 08:26:20 EST -0500 |   (use "git add/rm <file>..." to update what will be committed)
+08/17/23 08:26:20 EST -0500 |   (use "git restore <file>..." to discard changes in working directory)
+08/17/23 08:26:20 EST -0500 | 	modified:   ../../.gitignore
+08/17/23 08:26:20 EST -0500 | 	modified:   ../../README.md
+08/17/23 08:26:20 EST -0500 | 	modified:   ../base/utils.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../cron-jobs/non-root
+08/17/23 08:26:20 EST -0500 | 	modified:   ../data-tools/datalogger-mock-data-generator.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../git-maintenance/git-garbage-collector.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../git-maintenance/git-push.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../remote-access/reverse-ssh.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-monitors/health-checks-io.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-monitors/led-monitor.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-monitors/network-interface-monitor.sh
+08/17/23 08:26:20 EST -0500 | 	deleted:    ../system-monitors/ping-monitor.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-monitors/startup-notifier.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-monitors/status-monitor.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-setup/initializer.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-setup/led-off.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../system-setup/scheduler.sh
+08/17/23 08:26:20 EST -0500 | 	modified:   ../../lora/restart_lora_at_noevio_gateway.sh
+08/17/23 08:26:20 EST -0500 | 
+08/17/23 08:26:20 EST -0500 | no changes added to commit (use "git add" and/or "git commit -a")
+08/17/23 08:26:20 EST -0500 | + true
+08/17/23 08:26:20 EST -0500 | ++ git log --reverse --format=%H --branches --not --remotes
+08/17/23 08:26:20 EST -0500 | + for commit in $(git log --reverse --format="%H" --branches --not --remotes)
+08/17/23 08:26:20 EST -0500 | ++ git rev-parse --abbrev-ref HEAD
+08/17/23 08:26:20 EST -0500 | + git push --force origin fb2403376903cdd13917079dbfec01b5f9324b07:refs/heads/main
+08/17/23 08:32:48 EST -0500 | ########## START ##########
+08/17/23 08:32:48 EST -0500 | Read directories: /data/datalogger-mock-data /data/carina-logs
+08/17/23 08:32:48 EST -0500 | Processing directory: /data/datalogger-mock-data
+08/17/23 08:32:48 EST -0500 | [datalogger-mock-data 0f5dd34] 08/17/23 08:32:48 EST -0500
+08/17/23 08:32:48 EST -0500 |  1 file changed, 1 insertion(+)
+08/17/23 08:32:49 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
