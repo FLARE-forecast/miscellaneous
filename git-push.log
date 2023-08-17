@@ -3039,3 +3039,15 @@ nothing to commit, working tree clean
 08/17/23 08:16:33 EST -0500 | /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh: line 32: cd: /data/carina-logs /data/datalogger-mock-data: No such file or directory
 08/17/23 08:16:33 EST -0500 | ##########  END  ##########
 08/17/23 08:17:11 EST -0500 | ########## START ##########
+08/17/23 08:17:11 EST -0500 | ########################### /data/carina-logs /data/datalogger-mock-data
+08/17/23 08:17:11 EST -0500 | ##################### /data/carina-logs
+08/17/23 08:17:11 EST -0500 | [carina-logs 6c5c973] 08/17/23 08:17:11 EST -0500
+08/17/23 08:17:11 EST -0500 |  2 files changed, 258 insertions(+)
+08/17/23 08:17:12 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/17/23 08:17:12 EST -0500 |    6e7a4a4..6c5c973  6c5c9738a5b64a9b9306c7e34a56ca07c9d89f13 -> carina-logs
+08/17/23 08:17:12 EST -0500 | ##################### /data/datalogger-mock-data
+08/17/23 08:17:12 EST -0500 | [datalogger-mock-data 43eb771] 08/17/23 08:17:12 EST -0500
+08/17/23 08:17:12 EST -0500 |  1 file changed, 59 insertions(+)
+08/17/23 08:17:13 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/17/23 08:17:13 EST -0500 |    8cf0f91..43eb771  43eb7719d18f5764cc45648e8dd9e9f4f74b2d39 -> datalogger-mock-data
+08/17/23 08:17:13 EST -0500 | ##########  END  ##########
