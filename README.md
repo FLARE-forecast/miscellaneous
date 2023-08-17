@@ -1,2 +1,2 @@
 # miscellaneous
-Miscellaneous Helper Scripts for FLARE and Beyond FLARE
+Miscellaneous Helper Modules for FLARE and Beyond FLARE

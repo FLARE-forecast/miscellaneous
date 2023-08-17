@@ -1,35 +1,28 @@
 #!/bin/bash
 
-# Datalogger Mock Data Generator Script
+# Datalogger Mock Data Generator Module
 # Executd from the Gateways
 # Generates random data mocking the output of dataloggers for test and development purposes
 # Usage: Run periodically, every 10 minutes, for instance.
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=datalogger_mock_data_generator
 
-# Parse the config file using yq
-general_gateway_name=$(yq e '.general.gateway_name' $config_file)
-general_data_dir=$(yq e '.general.data_dir' $config_file)
-general_git_data_branch=$(yq e '.general.git_data_branch' $config_file)
-general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
-datalogger_mock_data_generator_log_file=$(yq e '.datalogger_mock_data_generator.log_file' $config_file)
-datalogger_mock_data_generator_log_file_path=$general_data_dir/$general_git_logs_branch/$datalogger_mock_data_generator_log_file
-datalogger_mock_data_generator_data_file=$(yq e '.datalogger_mock_data_generator.data_file' $config_file)
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
+
+# Check if the module is enabled
+check_if_enabled "$module_name"
+
+# Redirect all output of this module to log_to_file function
+exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$line"; done) 2>&1
+
+echo "########## START ##########"
+
+##########  BODY  ##########
+
 datalogger_mock_data_generator_data_file_path=$general_data_dir/$general_git_data_branch/$datalogger_mock_data_generator_data_file
-datalogger_mock_data_generator_interval=$(yq e '.datalogger_mock_data_generator.interval' $config_file)
-datalogger_mock_data_generator_enabled=$(yq e '.datalogger_mock_data_generator.enabled' $config_file)
-
-timestamp=$(date +"%D %T %Z %z")
-
-# Body of the script
-
-# Check if the script is enabled
-if [ "$datalogger_mock_data_generator_enabled" != "true" ]; then
-  echo "The script is not enabled. Exiting ..."
-  exit 0
-fi
 
 echo -e "\n############################ $general_gateway_name - $timestamp ############################\n" 2>&1 | tee -a "$datalogger_mock_data_generator_log_file_path"
 
@@ -39,12 +32,12 @@ generate_random_value() {
   local max="$2"
 
   if ! [[ "$min" =~ ^[0-9]+(\.[0-9]+)?$ ]] || ! [[ "$max" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
-    echo "Error: Minimum and maximum values must be numeric." 2>&1 | tee -a $datalogger_mock_data_generator_log_file_path
+    log_to_file "$module_name" "Error: Minimum and maximum values must be numeric."
     return 1
   fi
 
   if (( $(awk "BEGIN { print $min > $max }") )); then
-    echo "Error: Minimum value cannot be larger than maximum value." 2>&1 | tee -a $datalogger_mock_data_generator_log_file_path
+    log_to_file "$module_name" "Error: Minimum value cannot be larger than maximum value."
     return 1
   fi
 
@@ -114,3 +107,12 @@ for ((i=1; i<=missed_intervals; i++)); do
   # Increment the record number
   record=$((record + 1))
 done
+
+########## FOOTER ##########
+
+echo "##########  END  ##########"
+
+# Close stdout and stderr
+exec >&- 2>&-
+# Wait for all background processes to complete
+wait

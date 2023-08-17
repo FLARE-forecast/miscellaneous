@@ -1,52 +1,43 @@
 #!/bin/bash
 
-# Status Monitor Script
+# Status Monitor Module
 # Executd from the Gateways
 # Logs the current status of the system by checking on various services
 # Usage: Run at least once after reboot, a few times per day, for instance.
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=status_monitor
 
-# Parse the config file using yq
-general_gateway_name=$(yq e '.general.gateway_name' $config_file)
-general_data_dir=$(yq e '.general.data_dir' $config_file)
-general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
-status_monitor_log_file=$(yq e '.status_monitor.log_file' $config_file)
-status_monitor_log_file_path=$general_data_dir/$general_git_logs_branch/$status_monitor_log_file
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
 
-timestamp=$(date +"%D %T %Z %z")
+# Check if the module is enabled
+check_if_enabled "$module_name"
 
-# Body of the script
-echo -e "\n############################ $general_gateway_name - $timestamp ############################\n" 2>&1 | tee -a $status_monitor_log_file_path
-uptime 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-/usr/bin/last reboot | head -n 5 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-#systemctl status cron | grep ".service - \|Active:"
-#systemctl status watchdog | grep ".service - \|Active:"
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-/usr/bin/lsusb | grep Novatel 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-dmesg | grep enx 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-dmesg | tail 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-df -h | grep Filesystem 2>&1 | tee -a $status_monitor_log_file_path
-df -h | grep /dev/mmcblk 2>&1 | tee -a $status_monitor_log_file_path
-df -h | grep /dev/sd 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-#nmcli d wifi list 2>&1 | tee -a $status_monitor_log_file_path
-#echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-tail /var/log/vsftpd.log 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-/sbin/ip a | grep 'enx' | awk '{print $2}' 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-/sbin/ip a | grep 'enp1s0' | awk '{print $2}' 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-/sbin/ip a | grep 'enp2s0' | awk '{print $2}' 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-ping -c 3 github.com 2>&1 | tee -a $status_monitor_log_file_path
-echo -e "\n" 2>&1 | tee -a $status_monitor_log_file_path
-ping -c 3 8.8.8.8 2>&1 | tee -a $status_monitor_log_file_path
+# Redirect all output of this module to log_to_file function
+exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$line"; done) 2>&1
+
+echo "########## START ##########"
+
+##########  BODY  ##########
+
+uptime
+/usr/bin/last reboot | head -n 5
+/usr/bin/lsusb
+dmesg | grep enx || true
+dmesg | tail
+df -h
+/sbin/ip a
+tail /var/log/vsftpd.log || true
+ping -c 3 github.com || true
+ping -c 3 8.8.8.8 || true
+
+########## FOOTER ##########
+
+echo "##########  END  ##########"
+
+# Close stdout and stderr
+exec >&- 2>&-
+# Wait for all background processes to complete
+wait

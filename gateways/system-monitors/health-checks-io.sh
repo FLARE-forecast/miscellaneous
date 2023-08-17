@@ -1,16 +1,34 @@
 #!/bin/bash
 
-# HealthChecks.io Ping Script
+# HealthChecks.io Ping Module
 # Executd from the Gateways
 # Pings HealthChecks.io periodically as a notification of the gateway being awake
 # Usage: Run periodically, every minute, for instance.
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=health_checks_io
 
-# Parse the config file using yq
-health_checks_io_ping_url=$(yq e '.health_checks_io.ping_url' $config_file)
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
 
-# Body of the script
-curl -fsS --max-time 60 --retry 5 -o /dev/null $health_checks_io_ping_url
+# Check if the module is enabled
+check_if_enabled "$module_name"
+
+# Redirect all output of this module to log_to_file function
+exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$line"; done) 2>&1
+
+echo "########## START ##########"
+
+##########  BODY  ##########
+
+curl -fsS --max-time $health_checks_io_max_time --retry $health_checks_io_retry -o /dev/null $health_checks_io_ping_url
+
+########## FOOTER ##########
+
+echo "##########  END  ##########"
+
+# Close stdout and stderr
+exec >&- 2>&-
+# Wait for all background processes to complete
+wait

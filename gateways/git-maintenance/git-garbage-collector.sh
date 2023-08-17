@@ -1,38 +1,47 @@
 #!/bin/bash
 
-# Git Garbage Collector Script
+# Git Garbage Collector Module
 # Executd from the Gateways
 # Runs Git Garbage Collector
-# Usage: Run at least once every few weeks, recommended after running Git Push script for quicker runs.
+# Usage: Run at least once every few weeks, recommended after running Git Push Module for quicker runs.
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=git_garbage_collector
 
-# Parse the config file using yq
-general_gateway_name=$(yq e '.general.gateway_name' $config_file)
-general_data_dir=$(yq e '.general.data_dir' $config_file)
-general_git_data_branch=$(yq e '.general.git_data_branch' $config_file)
-general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
-git_garbage_collector_log_file=$(yq e '.git_garbage_collector.log_file' $config_file)
-git_garbage_collector_log_file_path=$general_data_dir/$general_git_logs_branch/$git_garbage_collector_log_file
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
 
-timestamp=$(date +"%D %T %Z %z")
+# Check if the module is enabled
+check_if_enabled "$module_name"
 
-# Body of the script
+# Redirect all output of this module to log_to_file function
+exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$line"; done) 2>&1
 
-echo -e "\n############################ $general_gateway_name - $timestamp ############################\n" 2>&1 | tee -a $git_garbage_collector_log_file_path
+echo "########## START ##########"
 
-echo -e "Disk Usage Before Git Garbage Collector:" 2>&1 | tee -a $git_garbage_collector_log_file_path
-df -h | grep $general_data_dir 2>&1 | tee -a $git_garbage_collector_log_file_path
+##########  BODY  ##########
 
-cd $general_data_dir/$general_git_data_branch
-echo -e "Working on: $(pwd)" 2>&1 | tee -a $git_garbage_collector_log_file_path
-git gc --prune 2>&1 | tee -a $git_garbage_collector_log_file_path
+# Read directories line-by-line into an array
+readarray -t dir_array <<< "$git_garbage_collector_directories"
 
-cd $general_data_dir/$general_git_logs_branch
-echo -e "Working on: $(pwd)" 2>&1 | tee -a $git_garbage_collector_log_file_path
-git gc --prune 2>&1 | tee -a $git_garbage_collector_log_file_path
+for dir in "${dir_array[@]}"; do
+    echo -e "Before:"
+    df -h | grep $general_data_dir
 
-echo -e "Disk Usage After Git Garbage Collector:" 2>&1 | tee -a $git_garbage_collector_log_file_path
-df -h | grep $general_data_dir 2>&1 | tee -a $git_garbage_collector_log_file_path
+    cd $dir || continue
+    echo -e "Working on: $(pwd)"
+    git gc --prune || continue
+
+    echo -e "After:"
+    df -h | grep $general_data_dir
+done
+
+########## FOOTER ##########
+
+echo "##########  END  ##########"
+
+# Close stdout and stderr
+exec >&- 2>&-
+# Wait for all background processes to complete
+wait

@@ -1,32 +1,21 @@
 #!/bin/bash
 
-# Gateway Initialization Script
+# Gateway Initialization Module
 # Executd from the Gateways
 # Initializes the gateway environment
 # Usage: Run once for the first time to initialize the gateway based on the configuration settings
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=initializer
 
-# Parse the config file using yq
-general_gateway_name=$(yq e '.general.gateway_name' $config_file)
-general_data_dir=$(yq e '.general.data_dir' $config_file)
-general_apps_dir=$(yq e '.general.apps_dir' $config_file)
-general_git_repo=$(yq e '.general.git_repo' $config_file)
-general_git_data_branch=$(yq e '.general.git_data_branch' $config_file)
-general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
-general_datalogger_data_dir=$(yq e '.general.datalogger_data_dir' $config_file)
-startup_notifier_local_repo_dir=$(yq e '.startup_notifier.local_repo_dir' $config_file)
-startup_notifier_git_branch=$(yq e '.startup_notifier.git_branch' $config_file)
-startup_notifier_git_repo=$(yq e '.startup_notifier.git_repo' $config_file)
-reverse_ssh_server=$(yq e '.reverse_ssh.server' $config_file)
-reverse_ssh_user=$(yq e '.reverse_ssh.user' $config_file)
-reverse_ssh_remote_port=$(yq e '.reverse_ssh.remote_port' $config_file)
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
+
+##########  BODY  ##########
+
 general_data_dir_path=$general_data_dir/$general_git_data_branch
 general_logs_dir_path=$general_data_dir/$general_git_logs_branch
-
-# Body of the script
 
 # Change hostname
 echo "$general_gateway_name" | sudo tee /etc/hostname

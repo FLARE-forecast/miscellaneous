@@ -1,38 +1,50 @@
 #!/bin/bash
 
-# Git Push Script
+# Git Push Module
 # Executd from the Gateways
 # Adds the new changes to Git, commits them locally, and pushes them to the Git remote
 # Usage: Run when new data or logs are available on the gateway, a few times per day, for instance.
 
-set -ex
+########## HEADER ##########
 
-config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
+module_name=git_push
 
-# Parse the config file using yq
-general_gateway_name=$(yq e '.general.gateway_name' $config_file)
-general_data_dir=$(yq e '.general.data_dir' $config_file)
-general_git_data_branch=$(yq e '.general.git_data_branch' $config_file)
-general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
-git_push_log_file=$(yq e '.git_push.log_file' $config_file)
-git_push_log_file_path=$general_data_dir/$general_git_logs_branch/$git_push_log_file
+# Load utility functions and configurations for gateways
+source /home/ubuntu/miscellaneous/gateways/base/utils.sh
 
-timestamp=$(date +"%D %T %Z %z")
+# Check if the module is enabled
+check_if_enabled "$module_name"
 
-# Body of the script
+# Redirect all output of this module to log_to_file function
+exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$line"; done) 2>&1
 
-echo -e "\n############################ $general_gateway_name - $timestamp ############################\n" 2>&1 | tee -a $git_push_log_file_path
+echo "########## START ##########"
 
-echo -e "Data:\n" 2>&1 | tee -a $git_push_log_file_path
-cd $general_data_dir/$general_git_data_branch
-git add . 2>&1 | tee -a $git_push_log_file_path
-git commit -m "$timestamp: Git Backup" 2>&1 | tee -a $git_push_log_file_path
-for commit in $(git log --reverse --format="%H" --branches --not --remotes); do git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD 2>&1 | tee -a $git_push_log_file_path); done
+##########  BODY  ##########
 
-echo -e "\nLogs:\n" 2>&1 | tee -a $git_push_log_file_path
-cd $general_data_dir/$general_git_logs_branch
-git add . 2>&1 | tee -a $git_push_log_file_path
-git commit -m "$timestamp: Logs" 2>&1 | tee -a $git_push_log_file_path
-for commit in $(git log --reverse --format="%H" --branches --not --remotes); do git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD 2>&1 | tee -a $git_push_log_file_path); done
+# Read directories line-by-line into an array
+readarray -t dir_array <<< "$git_push_directories"
 
-echo -e "\nCompleted at $(date +"%D %T %Z")\n" 2>&1 | tee -a $git_push_log_file_path
+for dir in "${dir_array[@]}"; do
+    timestamp=$(date +"%D %T %Z %z")
+    echo "Processing directory: $dir"
+
+    cd "$dir" || continue
+
+    git add .
+    
+    git commit -m "$timestamp" || continue
+
+    for commit in $(git log --reverse --format="%H" --branches --not --remotes); do 
+        git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD) || continue
+    done
+done
+
+########## FOOTER ##########
+
+echo "##########  END  ##########"
+
+# Close stdout and stderr
+exec >&- 2>&-
+# Wait for all background processes to complete
+wait
