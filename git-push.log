@@ -389,3 +389,15 @@
 08/17/23 22:20:02 EST -0500 | [datalogger-mock-data 4ab0591] 08/17/23 22:20:02 EST -0500
 08/17/23 22:20:02 EST -0500 |  1 file changed, 5 insertions(+)
 08/17/23 22:20:03 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/17/23 22:20:03 EST -0500 |    7715471..4ab0591  4ab05911b0e4c9e3111c870786e7263a61ed6620 -> datalogger-mock-data
+08/17/23 22:20:03 EST -0500 | Processing directory: /data/carina-logs
+08/17/23 22:20:03 EST -0500 | [carina-logs 5a81946] 08/17/23 22:20:03 EST -0500
+08/17/23 22:20:03 EST -0500 |  1 file changed, 12 insertions(+)
+08/17/23 22:20:03 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/17/23 22:20:03 EST -0500 |    2329dee..5a81946  5a81946140f3f1b040230597c573dc5ade1cebb5 -> carina-logs
+08/17/23 22:20:03 EST -0500 | ##########  END  ##########
+08/17/23 22:20:05 EST -0500 | ########## START ##########
+08/17/23 22:20:05 EST -0500 | Processing directory: /data/datalogger-mock-data
+08/17/23 22:20:05 EST -0500 | [datalogger-mock-data b820b52] 08/17/23 22:20:05 EST -0500
+08/17/23 22:20:05 EST -0500 |  1 file changed, 1 insertion(+)
+08/17/23 22:20:06 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
