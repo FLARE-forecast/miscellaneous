@@ -24,8 +24,6 @@ echo "########## START ##########"
 
 datalogger_mock_data_generator_data_file_path=$general_data_dir/$general_git_data_branch/$datalogger_mock_data_generator_data_file
 
-echo -e "\n############################ $general_gateway_name - $timestamp ############################\n" 2>&1 | tee -a "$datalogger_mock_data_generator_log_file_path"
-
 # Function to generate random values
 generate_random_value() {
   local min="$1"

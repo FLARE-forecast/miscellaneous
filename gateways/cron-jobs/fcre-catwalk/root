@@ -1,8 +1,0 @@
-10 00 * * * /sbin/shutdown now
-@reboot /home/ubuntu/applications/led-off.sh
-* * * * * /home/ubuntu/applications/led-monitor.sh
-*/5 * * * * /usr/bin/python3 /opt/evio/evio-control.py
-@reboot /usr/local/bin/restart_nebula.sh
-00 08 * * * /usr/local/bin/restart_nebula.sh
-@reboot sleep 30 && /home/ubuntu/lora/restart.sh
-00 * * * * /home/ubuntu/lora/restart.sh

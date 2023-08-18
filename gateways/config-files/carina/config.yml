@@ -12,6 +12,7 @@ general:
 
 scheduler:
   enabled: true
+  log_file: scheduler.log
   shutdown_delay_after_reboot: 30 # Shutdown delay after reboot in minutes
   shutdown_time: 00:10 # Exact time for shutdown
 
@@ -26,25 +27,29 @@ status_monitor:
   enabled: true
   log_file: status-monitor.log
 
-ping_monitor:
-  enabled: false
-  log_file_full: ping-monitor-full.log
-  log_file_stat: ping-monitor-stat.log
-
 git_push:
   enabled: true
   log_file: git-push.log
+  directories:
+  - /data/datalogger-mock-data
+  - /data/carina-logs
 
 git_garbage_collector:
   enabled: true
   log_file: git-garbage-collector.log
+  directories:
+  - /data/datalogger-mock-data
+  - /data/carina-logs
 
 health_checks_io:
   enabled: true
+  log_file: health-checks-io.log
   ping_url: https://hc-ping.com/63de05f7-b025-4645-8552-b5e0cae48f61
+  max_time: 60
+  retry: 5
 
 reverse_ssh:
-  enabled: false
+  enabled: true
   log_file: reverse-ssh.log
   local_port: 60002
   base_port: 61000
@@ -56,16 +61,21 @@ reverse_ssh:
   ServerAliveCountMax: 3
 
 datalogger_mock_data_generator:
-  enabled: false
+  enabled: true
   log_file: datalogger-mock-data-generator.log
   data_file: datalogger-mock-data.csv
   interval: 10 # Frequency of generating data in minutes
 
 network_interface_monitor:
-  enabled: false
+  enabled: true
+  log_file: network-interface-monitor.log
+  log_rotation_interval: 86400 # Frequency of log rotation in seconds
   interfaces:
-  - name: tnc0
-    log_file: tnc0.log
+  - name: enp2s0
+    log_file: enp2s0.log
   - name: nebula1
     log_file: nebula1.log
-  log_rotation_interval: 86400 # Frequency of log rotation in seconds
+
+led_monitor:  # Not working with newer Linux kernels
+  enabled: false
+  log_file: led-monitor.log

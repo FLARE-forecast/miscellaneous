@@ -1,5 +1,0 @@
-@reboot sleep 2000 && /sbin/shutdown now
-@reboot /home/ubuntu/applications/led-off.sh
-* * * * * /home/ubuntu/applications/led-monitor.sh
-@reboot /usr/local/bin/restart_nebula.sh
-00 08 * * * /usr/local/bin/restart_nebula.sh

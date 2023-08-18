@@ -2,7 +2,7 @@ general:
   gateway_name: diana
   gateway_location: fcre-weir
   gateway_power_mode: battery # "ac" or "battery"
-  gateway_maintenance_mode: true # true or false
+  gateway_maintenance_mode: false # true or false
   data_dir: /data
   apps_dir: /home/ubuntu/miscellaneous
   datalogger_data_dir: datalogger-data
@@ -12,6 +12,7 @@ general:
 
 scheduler:
   enabled: true
+  log_file: scheduler.log
   shutdown_delay_after_reboot: 30 # Shutdown delay after reboot in minutes
   shutdown_time: 00:10 # Exact time for shutdown
 
@@ -29,17 +30,26 @@ status_monitor:
 git_push:
   enabled: true
   log_file: git-push.log
+  directories:
+  - /data/fcre-weir-data
+  - /data/diana-logs
 
 git_garbage_collector:
   enabled: true
   log_file: git-garbage-collector.log
+  directories:
+  - /data/fcre-weir-data
+  - /data/diana-logs
 
 health_checks_io:
   enabled: true
+  log_file: health-checks-io.log
   ping_url: https://hc-ping.com/8c074ee7-de97-4c50-9dfc-987386c0d886
+  max_time: 60
+  retry: 5
 
 reverse_ssh:
-  enabled: true
+  enabled: false
   log_file: reverse-ssh.log
   local_port: 60004
   base_port: 61000
@@ -58,13 +68,14 @@ datalogger_mock_data_generator:
 
 network_interface_monitor:
   enabled: false
+  log_file: network-interface-monitor.log
+  log_rotation_interval: 86400 # Frequency of log rotation in seconds
   interfaces:
-    - name: tnc0
-      log_file: network-interface-monitor-tnc0.log
-    - name: nebula1
-      log_file: network-interface-monitor-nebula1.log
+  - name: enp2s0
+    log_file: enp2s0.log
+  - name: nebula1
+    log_file: nebula1.log
 
-ping_monitor:
+led_monitor:  # Not working with newer Linux kernels
   enabled: false
-  log_file_full: ping-monitor-full.log
-  log_file_stat: ping-monitor-stat.log
+  log_file: led-monitor.log

@@ -1,7 +1,0 @@
-@reboot sleep 60 && /home/ubuntu/applications/startup/startup.sh
-@reboot sleep 60 && /home/ubuntu/applications/reverse-ssh.sh
-@reboot sleep 60 && /home/ubuntu/applications/monitor.sh
-@reboot sleep 120 && /home/ubuntu/applications/git.sh && /home/ubuntu/applications/git-gc.sh
-00 */6 * * * /home/ubuntu/applications/monitor.sh
-05 02,08,14,20 * * * /home/ubuntu/applications/git.sh && /home/ubuntu/applications/git-gc.sh
-* * * * * /usr/bin/curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/b412fc85-0d1d-45d9-979e-d310038bf44d
