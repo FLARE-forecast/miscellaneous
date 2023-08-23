@@ -1,0 +1,12 @@
+Modules and their current status:
+1. general (maintenance_mode): true
+2. scheduler: true
+3. startup_notifier: true
+4. status_monitor: true
+5. git_push: true
+6. git_garbage_collector: true
+7. health_checks_io: true
+8. reverse_ssh: true
+9. datalogger_mock_data_generator: false
+10. network_interface_monitor: false
+11. led_monitor: true

@@ -1,0 +1,254 @@
+08/23/23 13:09:40 EST -0500 | ########## START ##########
+08/23/23 13:09:40 EST -0500 | Modules and their current status:
+08/23/23 13:09:40 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:09:40 EST -0500 | 2. scheduler: true
+08/23/23 13:09:40 EST -0500 | 3. startup_notifier: true
+08/23/23 13:09:40 EST -0500 | 4. status_monitor: true
+08/23/23 13:09:40 EST -0500 | 5. git_push: true
+08/23/23 13:09:40 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:09:40 EST -0500 | 7. health_checks_io: true
+08/23/23 13:09:40 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:09:40 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:09:40 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:09:40 EST -0500 | 11. led_monitor: true
+08/23/23 13:09:40 EST -0500 | 
+08/23/23 13:09:40 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:09:45 EST -0500 | Exiting without changes.
+08/23/23 13:11:15 EST -0500 | ########## START ##########
+08/23/23 13:11:15 EST -0500 | Modules and their current status:
+08/23/23 13:11:15 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:11:15 EST -0500 | 2. scheduler: true
+08/23/23 13:11:15 EST -0500 | 3. startup_notifier: true
+08/23/23 13:11:15 EST -0500 | 4. status_monitor: true
+08/23/23 13:11:15 EST -0500 | 5. git_push: true
+08/23/23 13:11:15 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:11:15 EST -0500 | 7. health_checks_io: true
+08/23/23 13:11:15 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:11:15 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:11:15 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:11:15 EST -0500 | 11. led_monitor: true
+08/23/23 13:11:15 EST -0500 | 
+08/23/23 13:11:15 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:11:21 EST -0500 | Set led_monitor to false.
+08/23/23 13:11:21 EST -0500 | Final Status:
+08/23/23 13:11:21 EST -0500 | Modules and their current status:
+08/23/23 13:11:21 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:11:21 EST -0500 | 2. scheduler: true
+08/23/23 13:11:21 EST -0500 | 3. startup_notifier: true
+08/23/23 13:11:21 EST -0500 | 4. status_monitor: true
+08/23/23 13:11:21 EST -0500 | 5. git_push: true
+08/23/23 13:11:21 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:11:21 EST -0500 | 7. health_checks_io: true
+08/23/23 13:11:21 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:11:21 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:11:21 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:11:21 EST -0500 | 11. led_monitor: false
+08/23/23 13:11:21 EST -0500 | 
+08/23/23 13:12:23 EST -0500 | ########## START ##########
+08/23/23 13:12:23 EST -0500 | Modules and their current status:
+08/23/23 13:12:24 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:12:24 EST -0500 | 2. scheduler: true
+08/23/23 13:12:24 EST -0500 | 3. startup_notifier: true
+08/23/23 13:12:24 EST -0500 | 4. status_monitor: true
+08/23/23 13:12:24 EST -0500 | 5. git_push: true
+08/23/23 13:12:24 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:12:24 EST -0500 | 7. health_checks_io: true
+08/23/23 13:12:24 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:12:24 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:12:24 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:12:24 EST -0500 | 11. led_monitor: false
+08/23/23 13:12:24 EST -0500 | 
+08/23/23 13:12:24 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:12:27 EST -0500 | Exiting without changes.
+08/23/23 13:13:03 EST -0500 | ########## START ##########
+08/23/23 13:13:03 EST -0500 | Modules and their current status:
+08/23/23 13:13:03 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:13:03 EST -0500 | 2. scheduler: true
+08/23/23 13:13:03 EST -0500 | 3. startup_notifier: true
+08/23/23 13:13:03 EST -0500 | 4. status_monitor: true
+08/23/23 13:13:03 EST -0500 | 5. git_push: true
+08/23/23 13:13:03 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:13:03 EST -0500 | 7. health_checks_io: true
+08/23/23 13:13:03 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:13:03 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:13:03 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:13:03 EST -0500 | 11. led_monitor: false
+08/23/23 13:13:03 EST -0500 | 
+08/23/23 13:13:03 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:13:05 EST -0500 | Set led_monitor to true.
+08/23/23 13:13:05 EST -0500 | Final Status:
+08/23/23 13:13:05 EST -0500 | Modules and their current status:
+08/23/23 13:13:05 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:13:05 EST -0500 | 2. scheduler: true
+08/23/23 13:13:05 EST -0500 | 3. startup_notifier: true
+08/23/23 13:13:05 EST -0500 | 4. status_monitor: true
+08/23/23 13:13:05 EST -0500 | 5. git_push: true
+08/23/23 13:13:05 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:13:05 EST -0500 | 7. health_checks_io: true
+08/23/23 13:13:05 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:13:05 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:13:05 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:13:05 EST -0500 | 11. led_monitor: true
+08/23/23 13:13:05 EST -0500 | 
+08/23/23 13:13:05 EST -0500 | ##########  END  ##########
+08/23/23 13:17:27 EST -0500 | ########## START ##########
+08/23/23 13:17:27 EST -0500 | Modules and their current status:
+08/23/23 13:17:27 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:17:27 EST -0500 | 2. scheduler: true
+08/23/23 13:17:27 EST -0500 | 3. startup_notifier: true
+08/23/23 13:17:27 EST -0500 | 4. status_monitor: true
+08/23/23 13:17:27 EST -0500 | 5. git_push: true
+08/23/23 13:17:27 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:17:27 EST -0500 | 7. health_checks_io: true
+08/23/23 13:17:27 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:17:27 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:17:27 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:17:27 EST -0500 | 11. led_monitor: true
+08/23/23 13:17:27 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:17:30 EST -0500 | Exiting without changes.
+08/23/23 13:17:33 EST -0500 | ########## START ##########
+08/23/23 13:17:33 EST -0500 | Modules and their current status:
+08/23/23 13:17:33 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:17:33 EST -0500 | 2. scheduler: true
+08/23/23 13:17:33 EST -0500 | 3. startup_notifier: true
+08/23/23 13:17:33 EST -0500 | 4. status_monitor: true
+08/23/23 13:17:33 EST -0500 | 5. git_push: true
+08/23/23 13:17:33 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:17:33 EST -0500 | 7. health_checks_io: true
+08/23/23 13:17:33 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:17:33 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:17:33 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:17:33 EST -0500 | 11. led_monitor: true
+08/23/23 13:17:33 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:17:36 EST -0500 | Set led_monitor to false.
+08/23/23 13:17:36 EST -0500 | Final Status:
+08/23/23 13:17:36 EST -0500 | Modules and their current status:
+08/23/23 13:17:36 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:17:36 EST -0500 | 2. scheduler: true
+08/23/23 13:17:36 EST -0500 | 3. startup_notifier: true
+08/23/23 13:17:36 EST -0500 | 4. status_monitor: true
+08/23/23 13:17:36 EST -0500 | 5. git_push: true
+08/23/23 13:17:36 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:17:36 EST -0500 | 7. health_checks_io: true
+08/23/23 13:17:36 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:17:36 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:17:36 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:17:36 EST -0500 | 11. led_monitor: false
+08/23/23 13:17:36 EST -0500 | ##########  END  ##########
+08/23/23 13:17:51 EST -0500 | ########## START ##########
+08/23/23 13:17:51 EST -0500 | Modules and their current status:
+08/23/23 13:17:51 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:17:51 EST -0500 | 2. scheduler: true
+08/23/23 13:17:51 EST -0500 | 3. startup_notifier: true
+08/23/23 13:17:51 EST -0500 | 4. status_monitor: true
+08/23/23 13:17:51 EST -0500 | 5. git_push: true
+08/23/23 13:17:51 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:17:51 EST -0500 | 7. health_checks_io: true
+08/23/23 13:17:51 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:17:51 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:17:51 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:17:51 EST -0500 | 11. led_monitor: false
+08/23/23 13:17:51 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:17:55 EST -0500 | Invalid selection: 12. Exiting without changes.
+08/23/23 13:18:16 EST -0500 | ########## START ##########
+08/23/23 13:18:16 EST -0500 | Modules and their current status:
+08/23/23 13:18:16 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:18:16 EST -0500 | 2. scheduler: true
+08/23/23 13:18:16 EST -0500 | 3. startup_notifier: true
+08/23/23 13:18:16 EST -0500 | 4. status_monitor: true
+08/23/23 13:18:16 EST -0500 | 5. git_push: true
+08/23/23 13:18:16 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:18:16 EST -0500 | 7. health_checks_io: true
+08/23/23 13:18:16 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:18:16 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:18:16 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:18:16 EST -0500 | 11. led_monitor: false
+08/23/23 13:18:16 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:18:20 EST -0500 | Invalid selection: 12. Exiting without changes.
+08/23/23 13:19:07 EST -0500 | ########## START ##########
+08/23/23 13:19:07 EST -0500 | Modules and their current status:
+08/23/23 13:19:07 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:07 EST -0500 | 2. scheduler: true
+08/23/23 13:19:07 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:07 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:07 EST -0500 | 5. git_push: true
+08/23/23 13:19:07 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:07 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:07 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:07 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:07 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:07 EST -0500 | 11. led_monitor: false
+08/23/23 13:19:07 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:19:08 EST -0500 | Invalid selection: 12. Exiting without changes.
+08/23/23 13:19:08 EST -0500 | Final Status:
+08/23/23 13:19:08 EST -0500 | Modules and their current status:
+08/23/23 13:19:08 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:08 EST -0500 | 2. scheduler: true
+08/23/23 13:19:08 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:08 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:08 EST -0500 | 5. git_push: true
+08/23/23 13:19:08 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:08 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:08 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:08 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:08 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:08 EST -0500 | 11. led_monitor: false
+08/23/23 13:19:08 EST -0500 | ##########  END  ##########
+08/23/23 13:19:15 EST -0500 | ########## START ##########
+08/23/23 13:19:15 EST -0500 | Modules and their current status:
+08/23/23 13:19:15 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:15 EST -0500 | 2. scheduler: true
+08/23/23 13:19:15 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:15 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:15 EST -0500 | 5. git_push: true
+08/23/23 13:19:15 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:15 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:15 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:15 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:15 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:15 EST -0500 | 11. led_monitor: false
+08/23/23 13:19:15 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:19:22 EST -0500 | Exiting without changes.
+08/23/23 13:19:22 EST -0500 | Final Status:
+08/23/23 13:19:22 EST -0500 | Modules and their current status:
+08/23/23 13:19:22 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:22 EST -0500 | 2. scheduler: true
+08/23/23 13:19:22 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:22 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:22 EST -0500 | 5. git_push: true
+08/23/23 13:19:22 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:22 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:22 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:22 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:22 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:22 EST -0500 | 11. led_monitor: false
+08/23/23 13:19:22 EST -0500 | ##########  END  ##########
+08/23/23 13:19:28 EST -0500 | ########## START ##########
+08/23/23 13:19:28 EST -0500 | Modules and their current status:
+08/23/23 13:19:28 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:28 EST -0500 | 2. scheduler: true
+08/23/23 13:19:28 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:28 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:28 EST -0500 | 5. git_push: true
+08/23/23 13:19:28 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:29 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:29 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:29 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:29 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:29 EST -0500 | 11. led_monitor: false
+08/23/23 13:19:29 EST -0500 | Select modules to toggle its status (e.g., 1 3 6) or enter 'q' to exit without changes:
+08/23/23 13:19:30 EST -0500 | Set led_monitor to true.
+08/23/23 13:19:30 EST -0500 | Final Status:
+08/23/23 13:19:30 EST -0500 | Modules and their current status:
+08/23/23 13:19:30 EST -0500 | 1. general (maintenance_mode): true
+08/23/23 13:19:31 EST -0500 | 2. scheduler: true
+08/23/23 13:19:31 EST -0500 | 3. startup_notifier: true
+08/23/23 13:19:31 EST -0500 | 4. status_monitor: true
+08/23/23 13:19:31 EST -0500 | 5. git_push: true
+08/23/23 13:19:31 EST -0500 | 6. git_garbage_collector: true
+08/23/23 13:19:31 EST -0500 | 7. health_checks_io: true
+08/23/23 13:19:31 EST -0500 | 8. reverse_ssh: true
+08/23/23 13:19:31 EST -0500 | 9. datalogger_mock_data_generator: false
+08/23/23 13:19:31 EST -0500 | 10. network_interface_monitor: false
+08/23/23 13:19:31 EST -0500 | 11. led_monitor: true
+08/23/23 13:19:31 EST -0500 | ##########  END  ##########
