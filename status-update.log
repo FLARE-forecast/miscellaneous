@@ -9,4 +9,4 @@ Modules and their current status:
 8. reverse_ssh: true
 9. datalogger_mock_data_generator: false
 10. network_interface_monitor: false
-11. led_monitor: true
+11. led_monitor: false
