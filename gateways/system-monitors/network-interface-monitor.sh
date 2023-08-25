@@ -33,8 +33,9 @@ trap "exit" SIGINT SIGTERM
 while read -r line; do
   interface_name=$(echo "$line" | yq -r '.name')
   read -r log_line
-  log_file=$(echo "$log_line" | yq -r '.log_file')
-  log_file_path=$general_data_dir/$general_git_logs_branch/$log_file
+  log_file_directory=$(echo "$log_line" | yq -r '.log_file_directory')
+  log_file_directory_path=$general_data_dir/$general_git_logs_branch/$log_file_directory
+  mkdir -p $general_data_dir/$general_git_logs_branch/$log_file_directory
 
   # Continuously monitor interface
   (
@@ -44,7 +45,7 @@ while read -r line; do
       done
 
       echo "Starting tcpdump for $interface_name..."
-      sudo tcpdump -i $interface_name -G $network_interface_monitor_log_rotation_interval -w "$log_file_path"_%Y-%m-%d_%H:%M:%S.pcap &
+      nohup sudo tcpdump -i $interface_name -G $network_interface_monitor_log_rotation_interval -w $log_file_directory_path/%Y-%m-%d_%H:%M:%S.pcap > /dev/null 2>&1 &
       pid=$!
 
       while kill -0 $pid 2>/dev/null && ip link show $interface_name up &>/dev/null; do

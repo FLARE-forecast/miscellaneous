@@ -27,14 +27,10 @@ readarray -t dir_array <<< "$git_push_directories"
 
 for dir in "${dir_array[@]}"; do
     timestamp=$(date +"%D %T %Z %z")
-    echo "Processing directory: $dir"
-
+    echo "Processing: $dir"
     cd "$dir" || continue
-
     git add .
-    
     git commit -m "$timestamp" || continue
-
     for commit in $(git log --reverse --format="%H" --branches --not --remotes); do 
         git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD) || continue
     done

@@ -7,6 +7,7 @@ set -e
 config_file=/home/ubuntu/miscellaneous/gateways/config-files/config.yml
 
 # General
+export general_log_file=$(yq e '.general.log_file' $config_file)
 export general_gateway_name=$(yq e '.general.gateway_name' $config_file)
 export general_gateway_location=$(yq e '.general.gateway_location' $config_file) 
 export general_gateway_power_mode=$(yq e '.general.gateway_power_mode' $config_file)
@@ -17,6 +18,7 @@ export general_datalogger_data_dir=$(yq e '.general.datalogger_data_dir' $config
 export general_git_repo=$(yq e '.general.git_repo' $config_file)
 export general_git_data_branch=$(yq e '.general.git_data_branch' $config_file)
 export general_git_logs_branch=$(yq e '.general.git_logs_branch' $config_file)
+export general_module_toggler_log_file=$(yq e '.general.module_toggler_log_file' $config_file)
 
 # Scheduler
 export scheduler_enabled=$(yq e '.scheduler.enabled' $config_file)
@@ -79,6 +81,28 @@ export network_interface_monitor_interfaces=$(yq e '.network_interface_monitor.i
 # LED Monitor
 export led_monitor_enabled=$(yq e '.led_monitor.enabled' $config_file)
 export led_monitor_log_file=$(yq e '.led_monitor.log_file' $config_file)
+
+# LoRa
+export lora_enabled=$(yq e '.lora.enabled' $config_file)
+export lora_log_file=$(yq e '.lora.log_file' $config_file)
+export lora_mode=$(yq e '.lora.mode' $config_file)
+export lora_serial_interface=$(yq e '.lora.serial_interface' $config_file)
+export lora_lora_interface=$(yq e '.lora.lora_interface' $config_file)
+export lora_evio_interface=$(yq e '.lora.evio_interface' $config_file)
+export lora_switch_interface=$(yq e '.lora.switch_interface' $config_file)
+export lora_node_ip=$(yq e '.lora.node_ip' $config_file)
+export lora_switch_ip=$(yq e '.lora.switch_ip' $config_file)
+export lora_baud_rate=$(yq e '.lora.baud_rate' $config_file)
+export lora_mtu=$(yq e '.lora.mtu' $config_file)
+export lora_rate=$(yq e '.lora.rate' $config_file)
+export lora_burst=$(yq e '.lora.burst' $config_file)
+export lora_latency=$(yq e '.lora.latency' $config_file)
+export lora_ingress_policing_rate=$(yq e '.lora.ingress_policing_rate' $config_file)
+export lora_ingress_policing_burst=$(yq e '.lora.ingress_policing_burst' $config_file)
+
+# Nebula
+export nebula_enabled=$(yq e '.nebula.enabled' $config_file)
+export nebula_log_file=$(yq e '.nebula.log_file' $config_file)
 
 ########## DEFINE FUNCTIONS ##########
 

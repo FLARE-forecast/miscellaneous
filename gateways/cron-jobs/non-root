@@ -9,11 +9,11 @@
 
 # Captures and logs the status of the system
 @reboot sleep 60 && /home/ubuntu/miscellaneous/gateways/system-monitors/status-monitor.sh
-19 */6 * * * /home/ubuntu/miscellaneous/gateways/system-monitors/status-monitor.sh
+25 00,08,14,20 * * * /home/ubuntu/miscellaneous/gateways/system-monitors/status-monitor.sh
 
 # Pushes the new additions to the remote repo and runs Git garbage collection afterwards
 @reboot sleep 120 && /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-garbage-collector.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh
-20 * * * * /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-garbage-collector.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh
+30 00,08,14,20 * * * /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-garbage-collector.sh; /home/ubuntu/miscellaneous/gateways/git-maintenance/git-push.sh
 
 # Sends awake ping signals to healthchecks.io
 * * * * * /home/ubuntu/miscellaneous/gateways/system-monitors/health-checks-io.sh
@@ -25,13 +25,9 @@
 @reboot /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh
 
 # Runs Nebula VPN
-@reboot sleep 60 && sudo /usr/local/bin/restart_nebula.sh
-00 * * * * sudo /usr/local/bin/restart_nebula.sh
+@reboot sleep 90 && sudo /home/ubuntu/miscellaneous/gateways/remote-access/nebula.sh
+00 * * * *  sudo /home/ubuntu/miscellaneous/gateways/remote-access/nebula.sh
 
 # Runs LoRa Radio
-# On pendant node
-@reboot sudo /usr/local/bin/restart_lora_at_pendant.sh 10.10.101.2/24 10.10.101.1/24
-00 * * * *  sudo /usr/local/bin/restart_lora_at_pendant.sh 10.10.101.2/24 10.10.101.1/24
-# On switch node
-@reboot sudo /usr/local/bin/restart_lora_at_noevio_gateway.sh 10.10.101.1/24
-00 * * * *  sudo /usr/local/bin/restart_lora_at_noevio_gateway.sh 10.10.101.1/24
+@reboot sleep 90 && sudo /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh
+00 * * * *  sudo /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh

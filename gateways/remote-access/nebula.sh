@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Git Garbage Collector Module
-# Executd from the Gateways
-# Runs Git Garbage Collector
-# Usage: Run at least once every few weeks, recommended after running Git Push Module for quicker runs.
+# Nebula Module
+# This module manages the Nebula service by ensuring the service is restarted and logs are captured.
+# Usage: Run after reboot and periodically, every hour, for instance.
 
 ########## HEADER ##########
 
-module_name=git_garbage_collector
+module_name=nebula
 
 # Load utility functions and configurations for gateways
 source /home/ubuntu/miscellaneous/gateways/base/utils.sh
@@ -22,20 +21,11 @@ echo "########## START ##########"
 
 ##########  BODY  ##########
 
-# Read directories line-by-line into an array
-readarray -t dir_array <<< "$git_garbage_collector_directories"
+# Killing any running instance of nebula
+/usr/bin/killall nebula || true
 
-for dir in "${dir_array[@]}"; do
-    echo -e "Before:"
-    df -h | grep $general_data_dir
-
-    cd $dir || continue
-    echo -e "Processing: $(pwd)"
-    git gc --prune || continue
-
-    echo -e "After:"
-    df -h | grep $general_data_dir
-done
+# Start nebula with configuration
+nohup /etc/nebula/nebula -config /etc/nebula/config.yaml &
 
 ########## FOOTER ##########
 
@@ -45,3 +35,4 @@ echo "##########  END  ##########"
 exec >&- 2>&-
 # Wait for all background processes to complete
 wait
+cront   
