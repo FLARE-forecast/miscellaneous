@@ -7,6 +7,8 @@ Modules and their current status:
 6. git_garbage_collector: true
 7. health_checks_io: true
 8. reverse_ssh: true
-9. datalogger_mock_data_generator: false
-10. network_interface_monitor: false
+9. datalogger_mock_data_generator: true
+10. network_interface_monitor: true
 11. led_monitor: false
+12. lora: false
+13. nebula: false
