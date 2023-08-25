@@ -47,3 +47,9 @@
 08/25/23 06:38:23 EST -0500 | ########## START ##########
 08/25/23 06:38:23 EST -0500 | tncattach: no process found
 08/25/23 06:38:28 EST -0500 | Invalid mode: . Exiting.
+08/25/23 07:00:02 EST -0500 | ########## START ##########
+08/25/23 07:00:02 EST -0500 | tncattach: no process found
+08/25/23 07:00:07 EST -0500 | Invalid mode: . Exiting.
+08/25/23 07:28:04 EST -0500 | ########## START ##########
+08/25/23 07:28:04 EST -0500 | tncattach: no process found
+08/25/23 07:28:09 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory

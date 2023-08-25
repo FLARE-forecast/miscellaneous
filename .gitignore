@@ -1,5 +1,13 @@
 null
 nohup.out
+nebula1/*
+enp1s0/*
+enp2s0/*
+tnc0/*
+eno1/*
+wlp1s0/*
+docker0/*
+lo/*
 *.pcap
 general.log
 health-checks-io.log
