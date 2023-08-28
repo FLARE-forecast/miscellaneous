@@ -4896,3 +4896,13 @@
 08/28/23 10:44:35 EST -0500 |  1 file changed, 4 insertions(+)
 08/28/23 10:44:36 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
 08/28/23 10:44:36 EST -0500 |    7a9bbcb..47eede1  47eede1077557d9d99783d4e801936892dc7e0c4 -> datalogger-mock-data
+08/28/23 10:44:36 EST -0500 | Processing: /data/carina-logs
+08/28/23 10:44:36 EST -0500 | [carina-logs 5e8223c] 08/28/23 10:44:36 EST -0500
+08/28/23 10:44:36 EST -0500 |  3 files changed, 38 insertions(+), 254 deletions(-)
+08/28/23 10:44:36 EST -0500 |  rewrite lora.log (100%)
+08/28/23 10:44:37 EST -0500 | To github.com:FLARE-forecast/miscellaneous.git
+08/28/23 10:44:37 EST -0500 |    59e0727..5e8223c  5e8223c1948cdf1ccbf4c4f55acf0720357b052a -> carina-logs
+08/28/23 10:44:37 EST -0500 | ##########  END  ##########
+08/28/23 10:45:42 EST -0500 | ########## START ##########
+08/28/23 10:45:42 EST -0500 | Processing: /data/datalogger-mock-data
+08/28/23 10:45:42 EST -0500 | On branch datalogger-mock-data
