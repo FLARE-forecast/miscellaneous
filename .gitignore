@@ -15,6 +15,7 @@ datalogger-mock-data-generator.log
 scheduler.log
 startup-notifier.log
 reverse-ssh.log
+autossh.log
 network-interface-monitor.log
 git-garbage-collector.log
 led-monitor.log
