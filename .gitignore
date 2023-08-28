@@ -18,4 +18,4 @@ reverse-ssh.log
 network-interface-monitor.log
 git-garbage-collector.log
 led-monitor.log
-nebula.log
+nebula-overlay-network.log
