@@ -221,3 +221,27 @@
 08/28/23 00:00:01 EST -0500 | ########## START ##########
 08/28/23 00:00:01 EST -0500 | tncattach: no process found
 08/28/23 00:00:06 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 01:00:02 EST -0500 | ########## START ##########
+08/28/23 01:00:02 EST -0500 | tncattach: no process found
+08/28/23 01:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 02:00:02 EST -0500 | ########## START ##########
+08/28/23 02:00:02 EST -0500 | tncattach: no process found
+08/28/23 02:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 03:00:02 EST -0500 | ########## START ##########
+08/28/23 03:00:02 EST -0500 | tncattach: no process found
+08/28/23 03:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 04:00:02 EST -0500 | ########## START ##########
+08/28/23 04:00:02 EST -0500 | tncattach: no process found
+08/28/23 04:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 05:00:02 EST -0500 | ########## START ##########
+08/28/23 05:00:02 EST -0500 | tncattach: no process found
+08/28/23 05:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 06:00:02 EST -0500 | ########## START ##########
+08/28/23 06:00:02 EST -0500 | tncattach: no process found
+08/28/23 06:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 07:00:02 EST -0500 | ########## START ##########
+08/28/23 07:00:02 EST -0500 | tncattach: no process found
+08/28/23 07:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
+08/28/23 08:00:02 EST -0500 | ########## START ##########
+08/28/23 08:00:02 EST -0500 | tncattach: no process found
+08/28/23 08:00:07 EST -0500 | /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh: line 44: /usr/local/bin/tncattach: No such file or directory
