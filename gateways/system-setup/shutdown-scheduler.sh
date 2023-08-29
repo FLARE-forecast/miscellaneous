@@ -24,11 +24,11 @@ echo "########## START ##########"
 
 # Check the power mode and schedule the shutdown accordingly
 if [ "$general_gateway_power_mode" = "ac" ]; then
-    echo "The system is in AC power mode. Scheduling shutdown at $shutdown_scheduler_shutdown_time."
+    echo "AC power mode"
     # Schedule shutdown at the given time
     sudo shutdown -h "$shutdown_scheduler_shutdown_time"
 elif [ "$general_gateway_power_mode" = "battery" ]; then
-    echo "The system is in battery power mode. Scheduling shutdown in $shutdown_scheduler_post_reboot_delay_minutes minutes after reboot."
+    echo "Battery power mode"
     # Schedule shutdown after the given delay
     sudo shutdown -h +$shutdown_scheduler_post_reboot_delay_minutes
 else

@@ -40,7 +40,7 @@ filtered_modules=($(get_filtered_modules))
 
 # Function to display modules and their status
 display_modules_status() {
-    echo "Modules and their current status:"
+    echo "FLARE gateway modules and their current status:"
     max_index_length=${#filtered_modules[@]}
     for idx in "${!filtered_modules[@]}"; do
         formatted_idx=$(printf "%${max_index_length}s" "$((idx+1))")
@@ -77,7 +77,7 @@ display_modules_status
 echo
 
 # Get user selection
-echo -e "Choose one or more modules (e.g., 1, 3, 6) to toggle their status (enable/disable), or type 'q' to exit without making any changes:"
+echo -e "Choose one or more modules separated by space (e.g., 1 3 6) to toggle their status (enable/disable), or type 'q' to exit without making any changes:"
 read -a selections
 
 for selected in "${selections[@]}"; do
@@ -97,7 +97,6 @@ done
 
 # After toggling the status, display and log the final status
 echo
-echo "Final Status:"
 display_modules_status 2>&1 | tee $general_data_dir/$general_git_logs_branch/$general_module_toggler_log_file
 echo
 

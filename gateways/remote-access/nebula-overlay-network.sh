@@ -23,6 +23,7 @@ echo "########## START ##########"
 
 # Killing any running instance of nebula
 sudo /usr/bin/killall nebula || true
+sleep 1
 
 # Start nebula with configuration
 sudo nohup /etc/nebula/nebula -config /etc/nebula/config.yaml &
