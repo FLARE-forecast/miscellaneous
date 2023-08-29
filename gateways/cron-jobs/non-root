@@ -1,5 +1,5 @@
 # Schedules the system shutdown
-@reboot /home/ubuntu/miscellaneous/gateways/system-setup/scheduler.sh
+@reboot /home/ubuntu/miscellaneous/gateways/system-setup/shutdown-scheduler.sh
 
 # Facilitates SSH connection from JS2
 @reboot sleep 90 && /home/ubuntu/miscellaneous/gateways/remote-access/reverse-ssh.sh
@@ -24,10 +24,10 @@
 # Runs tcpdump on network interface(s)
 @reboot /home/ubuntu/miscellaneous/gateways/system-monitors/network-interface-monitor.sh
 
-# Runs Nebula VPN
-@reboot sleep 90 && sudo /home/ubuntu/miscellaneous/gateways/remote-access/nebula.sh
-00 * * * *  sudo /home/ubuntu/miscellaneous/gateways/remote-access/nebula.sh
+# Runs Nebula Overlay Network
+@reboot sleep 90 && /home/ubuntu/miscellaneous/gateways/remote-access/nebula-overlay-network.sh
+00 * * * * /home/ubuntu/miscellaneous/gateways/remote-access/nebula-overlay-network.sh
 
 # Runs LoRa Radio
-@reboot sleep 90 && sudo /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh
-00 * * * *  sudo /home/ubuntu/miscellaneous/gateways/remote-access/lora.sh
+@reboot sleep 90 && /home/ubuntu/miscellaneous/gateways/remote-access/lora-radio.sh
+00 * * * *  /home/ubuntu/miscellaneous/gateways/remote-access/lora-radio.sh

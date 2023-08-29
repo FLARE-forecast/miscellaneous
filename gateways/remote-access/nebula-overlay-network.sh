@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Nebula Module
+# Nebula Overlay Network Module
 # This module manages the Nebula service by ensuring the service is restarted and logs are captured.
 # Usage: Run after reboot and periodically, every hour, for instance.
 
 ########## HEADER ##########
 
-module_name=nebula
+module_name=nebula_overlay_network
 
 # Load utility functions and configurations for gateways
 source /home/ubuntu/miscellaneous/gateways/base/utils.sh
@@ -22,10 +22,10 @@ echo "########## START ##########"
 ##########  BODY  ##########
 
 # Killing any running instance of nebula
-/usr/bin/killall nebula || true
+sudo /usr/bin/killall nebula || true
 
 # Start nebula with configuration
-nohup /etc/nebula/nebula -config /etc/nebula/config.yaml &
+sudo nohup /etc/nebula/nebula -config /etc/nebula/config.yaml &
 
 ########## FOOTER ##########
 
@@ -35,4 +35,3 @@ echo "##########  END  ##########"
 exec >&- 2>&-
 # Wait for all background processes to complete
 wait
-cront   

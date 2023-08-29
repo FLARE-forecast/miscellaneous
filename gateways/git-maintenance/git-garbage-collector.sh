@@ -25,15 +25,14 @@ echo "########## START ##########"
 # Read directories line-by-line into an array
 readarray -t dir_array <<< "$git_garbage_collector_directories"
 
-for dir in "${dir_array[@]}"; do
-    echo -e "Before:"
-    df -h | grep $general_data_dir
+echo -e "Disk status before Git garbage collection:"
+df -h | grep $general_data_dir
 
+for dir in "${dir_array[@]}"; do
     cd $dir || continue
     echo -e "Processing: $(pwd)"
     git gc --prune || continue
-
-    echo -e "After:"
+    echo -e "Disk status after Git garbage collection:"
     df -h | grep $general_data_dir
 done
 

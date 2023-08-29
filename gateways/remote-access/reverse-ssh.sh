@@ -6,6 +6,8 @@
 # Usage: Run after reboot.
 # Basic Test: ssh -R 60001:localhost:22 ubuntu@149.165.159.29
 
+# TODO: Integrate module logging and autossh logging
+
 ########## HEADER ##########
 
 module_name=reverse_ssh
@@ -23,7 +25,9 @@ echo "########## START ##########"
 
 ##########  BODY  ##########
 
-AUTOSSH_DEBUG=1 autossh -o "ServerAliveInterval $reverse_ssh_ServerAliveInterval" -o "ServerAliveCountMax $reverse_ssh_ServerAliveCountMax" -M $reverse_ssh_base_port -R $reverse_ssh_local_port:$reverse_ssh_localhost:$reverse_ssh_remote_port -fNT $reverse_ssh_user@$reverse_ssh_server
+reverse_ssh_autossh_log_file_path=$general_data_dir/$general_git_logs_branch/$reverse_ssh_autossh_log_file
+
+AUTOSSH_DEBUG=1 AUTOSSH_LOGFILE="$reverse_ssh_autossh_log_file_path" autossh -vvv -o "ServerAliveInterval $reverse_ssh_ServerAliveInterval" -o "ServerAliveCountMax $reverse_ssh_ServerAliveCountMax" -M $reverse_ssh_base_port -R $reverse_ssh_local_port:$reverse_ssh_localhost:$reverse_ssh_remote_port -fNT $reverse_ssh_user@$reverse_ssh_server
 
 ########## FOOTER ##########
 

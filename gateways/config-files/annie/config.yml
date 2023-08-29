@@ -1,4 +1,5 @@
 general:
+  log_file: general.log
   gateway_name: annie
   gateway_location: ccre-dam
   gateway_power_mode: ac # "ac" or "battery"
@@ -9,48 +10,50 @@ general:
   git_repo: git@github.com:FLARE-forecast/CCRE-data.git
   git_data_branch: ccre-dam-data
   git_logs_branch: annie-logs
+  module_toggler_log_file: module-toggler.log
 
-scheduler:
-  enabled: true
-  log_file: scheduler.log
-  shutdown_delay_after_reboot: 30 # Shutdown delay after reboot in minutes
-  shutdown_time: 00:10 # Exact time for shutdown
+shutdown_scheduler:
+  is_enabled: true
+  log_file: shutdown-scheduler.log
+  post_reboot_delay_minutes: 30 # Delay in minutes after reboot before scheduling a shutdown when on battery
+  shutdown_time: 00:10 # HH:MM format, the exact time to schedule a shutdown when on AC power
 
 startup_notifier:
-  enabled: true
+  is_enabled: true
   log_file: startup-notifier.log
   local_repo_dir: startup-notifier
   git_repo: git@github.com:FLARE-forecast/CCRE-data.git
   git_branch: main
 
 status_monitor:
-  enabled: true
+  is_enabled: true
   log_file: status-monitor.log
 
 git_push:
-  enabled: true
+  is_enabled: true
   log_file: git-push.log
   directories:
-  - /data/ccre-dam-data
-  - /data/annie-logs
+    - /data/ccre-dam-data
+    - /data/annie-logs
 
 git_garbage_collector:
-  enabled: true
+  is_enabled: true
   log_file: git-garbage-collector.log
   directories:
-  - /data/ccre-dam-data
-  - /data/annie-logs
+    - /data/ccre-dam-data
+    - /data/annie-logs
 
 health_checks_io:
-  enabled: true
+  is_enabled: true
   log_file: health-checks-io.log
   ping_url: https://hc-ping.com/796de728-9e18-4133-a810-397a275d2ae2
   max_time: 60
   retry: 5
 
 reverse_ssh:
-  enabled: true
+  is_enabled: true
   log_file: reverse-ssh.log
+  autossh_log_file: autossh.log
   local_port: 60006
   base_port: 61000
   remote_port: 22
@@ -61,21 +64,43 @@ reverse_ssh:
   ServerAliveCountMax: 3
 
 datalogger_mock_data_generator:
-  enabled: false
+  is_enabled: false
   log_file: datalogger-mock-data-generator.log
   data_file: datalogger-mock-data.csv
   interval: 10 # Frequency of generating data in minutes
 
 network_interface_monitor:
-  enabled: false
+  is_enabled: false
   log_file: network-interface-monitor.log
   log_rotation_interval: 86400 # Frequency of log rotation in seconds
   interfaces:
-  - name: enp2s0
-    log_file: enp2s0.log
-  - name: nebula1
-    log_file: nebula1.log
+    - name: enp2s0
+      log_file_directory: enp2s0 # To store .pcap files
+    - name: nebula1
+      log_file_directory: nebula1 # To store .pcap files
 
 led_monitor:  # Not working with newer Linux kernels
-  enabled: false
+  is_enabled: false
   log_file: led-monitor.log
+
+lora_radio:
+  is_enabled: false
+  log_file: lora-radio.log
+  mode: pendant # "evio" or "noevio" or "pendant"
+  serial_interface: ttyUSB0
+  lora_interface: tnc0
+  evio_interface: appCIBR6
+  switch_interface: enp1s0
+  node_ip: 10.10.101.2/24 # ip/netmask
+  switch_ip: 10.10.101.1/24 # ip/netmask, IP address of the gateway on the other side of the LoRa link
+  baud_rate: 115200
+  mtu: 400 # bytes
+  rate: 20 # kbit
+  burst: 32 # kbit
+  latency: 400 # ms
+  ingress_policing_rate: 10 #kbit
+  ingress_policing_burst: 10 #kbit
+
+nebula_overlay_network:
+  is_enabled: true
+  log_file: nebula-overlay-network.log
