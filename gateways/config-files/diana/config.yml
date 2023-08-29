@@ -85,7 +85,7 @@ led_monitor:  # Not working with newer Linux kernels
 lora_radio:
   is_enabled: true
   log_file: lora-radio.log
-  mode: pendant # "evio" or "noevio" or "pendant"
+  mode: pendant # "evio", "noevio", "noevio-nat", or "pendant"
   serial_interface: ttyUSB0
   lora_interface: tnc0
   evio_interface: appCIBR6

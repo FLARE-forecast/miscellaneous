@@ -83,11 +83,11 @@ led_monitor:  # Not working with newer Linux kernels
 lora_radio:
   is_enabled: true
   log_file: lora-radio.log
-  mode: noevio # "evio" or "noevio" or "pendant"
+  mode: noevio-nat # "evio", "noevio", "noevio-nat", or "pendant"
   serial_interface: ttyUSB0
   lora_interface: tnc0
   evio_interface: appCIBR6
-  switch_interface: enp1s0
+  switch_interface: enx0015ff030033
   node_ip: 10.10.101.1/24 # ip/netmask
   switch_ip: 10.10.101.1/24 # ip/netmask, IP address of the gateway on the other side of the LoRa link
   baud_rate: 115200

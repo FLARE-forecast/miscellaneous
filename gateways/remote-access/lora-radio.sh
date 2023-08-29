@@ -38,6 +38,7 @@ echo "########## START ##########"
 sudo /usr/bin/killall tncattach || true
 sleep 5
 
+echo "LoRa in $lora_radio_mode mode"
 case $lora_radio_mode in
     "pendant")
         sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip
@@ -47,6 +48,11 @@ case $lora_radio_mode in
         ;;
 
     "noevio")
+        sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip
+        sudo /usr/sbin/tc qdisc add dev $lora_radio_lora_interface root tbf rate "$lora_radio_rate"kbit burst "$lora_radio_burst"kbit latency "$lora_radio_latency"ms
+        ;;
+
+    "noevio-nat")
         sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip
         sudo /usr/sbin/tc qdisc add dev $lora_radio_lora_interface root tbf rate "$lora_radio_rate"kbit burst "$lora_radio_burst"kbit latency "$lora_radio_latency"ms
         echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null

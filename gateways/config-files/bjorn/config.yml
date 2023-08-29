@@ -85,7 +85,7 @@ led_monitor:
 lora_radio:
   is_enabled: false
   log_file: lora-radio.log
-  mode: pendant # "evio" or "noevio" or "pendant"
+  mode: noevio # "evio", "noevio", "noevio-nat", or "pendant"
   serial_interface: ttyUSB0
   lora_interface: tnc0
   evio_interface: appCIBR6
