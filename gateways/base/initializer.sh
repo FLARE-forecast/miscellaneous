@@ -68,3 +68,6 @@ else
   cd $general_apps_dir/$startup_notifier_local_repo_dir/$general_gateway_name
   git pull
 fi
+
+# Create symbolic link for module toggler
+sudo ln -s /home/ubuntu/miscellaneous/gateways/base/module-toggler.sh /usr/local/bin/toggler || true

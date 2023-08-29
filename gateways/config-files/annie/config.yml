@@ -3,7 +3,6 @@ general:
   gateway_name: annie
   gateway_location: ccre-dam
   gateway_power_mode: ac # "ac" or "battery"
-  gateway_maintenance_mode: false # true or false
   data_dir: /data
   apps_dir: /home/ubuntu/miscellaneous
   datalogger_data_dir: datalogger-data

@@ -60,6 +60,10 @@ toggle_module_status() {
         yq eval ".${opt}.is_enabled = false" -i $config_file
         echo
         echo "${opt} disabled."
+        # Check if the module being disabled is shutdown_scheduler
+        if [ "$opt" == "shutdown_scheduler" ]; then
+            sudo shutdown -c # Cancel shutdown
+        fi
     else
         yq eval ".${opt}.is_enabled = true" -i $config_file
         echo
