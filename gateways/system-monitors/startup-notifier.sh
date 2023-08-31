@@ -24,10 +24,13 @@ echo "########## START ##########"
 
 cd $general_apps_dir/$startup_notifier_local_repo_dir/$general_gateway_name
 date > $general_gateway_name
+timestamp=$(date +"%a %Y-%m-%d %T %Z")
 git add $general_gateway_name
-git commit -m "$(date +"%D %T %Z %z")"
+git commit -m "$timestamp"
 git pull --rebase
-git push
+for commit in $(git log --reverse --format="%H" --branches --not --remotes); do 
+    git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD) || continue
+done
 
 ########## FOOTER ##########
 

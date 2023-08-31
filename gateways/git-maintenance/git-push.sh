@@ -26,7 +26,7 @@ echo "########## START ##########"
 readarray -t dir_array <<< "$git_push_directories"
 
 for dir in "${dir_array[@]}"; do
-    timestamp=$(date +"%D %T %Z %z")
+    timestamp=$(date +"%a %Y-%m-%d %T %Z")
     echo "Processing: $dir"
     cd "$dir" || continue
     git add .

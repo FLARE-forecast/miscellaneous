@@ -36,15 +36,16 @@ echo "########## START ##########"
 
 # Bring lora interface down and up
 sudo /usr/bin/killall tncattach || true
-sleep 5
+sleep 1
 
-echo "LoRa in $lora_radio_mode mode"
 case $lora_radio_mode in
     "pendant")
-        sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip
+        sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip$lora_radio_node_netmask
         sudo /usr/sbin/tc qdisc add dev $lora_radio_lora_interface root tbf rate "$lora_radio_rate"kbit burst "$lora_radio_burst"kbit latency "$lora_radio_latency"ms
-        sudo /usr/sbin/ip route delete default
-        sudo /usr/sbin/ip route add default via $lora_radio_switch_ip
+        if ip route | grep -q default; then
+            sudo /usr/sbin/ip route delete default
+        fi
+        sudo /usr/sbin/ip route add default via $lora_radio_lora_gateway_ip
         ;;
 
     "noevio")
@@ -56,9 +57,9 @@ case $lora_radio_mode in
         sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i $lora_radio_node_ip
         sudo /usr/sbin/tc qdisc add dev $lora_radio_lora_interface root tbf rate "$lora_radio_rate"kbit burst "$lora_radio_burst"kbit latency "$lora_radio_latency"ms
         echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null
-        sudo /sbin/iptables -t nat -A POSTROUTING -o $lora_radio_switch_interface -j MASQUERADE
-        sudo /sbin/iptables -A FORWARD -i $lora_radio_switch_interface -o $lora_radio_lora_interface -m state --state RELATED,ESTABLISHED -j ACCEPT
-        sudo /sbin/iptables -A FORWARD -i $lora_radio_lora_interface -o $lora_radio_switch_interface -j ACCEPT
+        sudo /sbin/iptables -t nat -A POSTROUTING -o $lora_radio_uplink_interface -j MASQUERADE
+        sudo /sbin/iptables -A FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -m state --state RELATED,ESTABLISHED -j ACCEPT
+        sudo /sbin/iptables -A FORWARD -i $lora_radio_lora_interface -o $lora_radio_uplink_interface -j ACCEPT
         ;;
 
     "evio")

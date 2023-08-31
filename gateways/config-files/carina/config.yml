@@ -88,17 +88,18 @@ lora_radio:
   mode: noevio # "evio", "noevio", "noevio-nat", or "pendant"
   serial_interface: ttyUSB0
   lora_interface: tnc0
-  evio_interface: appCIBR6
-  switch_interface: enp1s0
-  node_ip: 10.10.101.2/24 # ip/netmask
-  switch_ip: 10.10.101.1/24 # ip/netmask, IP address of the gateway on the other side of the LoRa link
+  evio_interface: appCIBR6 # For "evio" mode
+  uplink_interface: enp1s0 # For "noevio-nat" mode, Interface on the other side of the LoRa link with internet access
+  node_ip: 10.10.101.2
+  node_netmask: /24
+  lora_gateway_ip: 10.10.101.1 # For "pendant" mode, IP address of the gateway on the other side of the LoRa link
   baud_rate: 115200
   mtu: 400 # bytes
   rate: 20 # kbit
   burst: 32 # kbit
   latency: 400 # ms
-  ingress_policing_rate: 10 #kbit
-  ingress_policing_burst: 10 #kbit
+  ingress_policing_rate: 10 # kbit, For "evio" mode
+  ingress_policing_burst: 10 # kbit, For "evio" mode
   
 nebula_overlay_network:
   is_enabled: true
