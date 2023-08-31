@@ -70,4 +70,7 @@ else
 fi
 
 # Create symbolic link for module toggler
-sudo ln -s /home/ubuntu/miscellaneous/gateways/base/module-toggler.sh /usr/local/bin/toggler || true
+if [ ! -f "/usr/local/bin/toggler" ]; then
+  # Create symlink
+  sudo ln -s "$general_apps_dir/gateways/base/module-toggler.sh" "/usr/local/bin/toggler" 
+fi
