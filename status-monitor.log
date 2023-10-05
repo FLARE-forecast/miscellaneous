@@ -2005,3 +2005,73 @@
 09/08/23 20:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 09/08/23 20:25:06 EST -0500 | rtt min/avg/max/mdev = 4.304/5.963/7.101/1.199 ms
 09/08/23 20:25:06 EST -0500 | ##########  END  ##########
+10/05/23 09:41:53 EST -0500 | ########## START ##########
+10/05/23 09:41:53 EST -0500 |  09:41:53 up 1 min,  0 users,  load average: 0.74, 0.27, 0.10
+10/05/23 09:41:53 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Oct  5 09:40   still running
+10/05/23 09:41:53 EST -0500 | reboot   system boot  5.15.0-76-generi Fri Sep  8 10:28 - 00:10  (13:41)
+10/05/23 09:41:53 EST -0500 | reboot   system boot  5.15.0-76-generi Thu Sep  7 10:02 - 00:10  (14:08)
+10/05/23 09:41:53 EST -0500 | reboot   system boot  5.15.0-76-generi Mon Sep  4 09:55 - 00:10  (14:14)
+10/05/23 09:41:53 EST -0500 | reboot   system boot  5.15.0-76-generi Sun Sep  3 09:44 - 00:10  (14:25)
+10/05/23 09:41:53 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+10/05/23 09:41:53 EST -0500 | Bus 001 Device 003: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+10/05/23 09:41:53 EST -0500 | Bus 001 Device 002: ID 04b4:6570 Cypress Semiconductor Corp. Unprogrammed CY7C65632/34 hub HX2VL
+10/05/23 09:41:53 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+10/05/23 09:41:53 EST -0500 | [   11.274386] Bluetooth: hci0: Reading supported features failed (-16)
+10/05/23 09:41:53 EST -0500 | [   11.275429] Bluetooth: hci0: Firmware revision 0.0 build 14 week 44 2021
+10/05/23 09:41:53 EST -0500 | [   13.880930] loop0: detected capacity change from 0 to 8
+10/05/23 09:41:53 EST -0500 | [   14.000019] igb 0000:02:00.0 enp2s0: igb: enp2s0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+10/05/23 09:41:53 EST -0500 | [   14.107633] IPv6: ADDRCONF(NETDEV_CHANGE): enp2s0: link becomes ready
+10/05/23 09:41:53 EST -0500 | [   14.823609] device enp2s0 entered promiscuous mode
+10/05/23 09:41:53 EST -0500 | [   15.845885] audit: type=1400 audit(1696516850.907:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1608 comm="apparmor_parser"
+10/05/23 09:41:53 EST -0500 | [   16.908347] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+10/05/23 09:41:53 EST -0500 | [   16.912791] Bridge firewalling registered
+10/05/23 09:41:53 EST -0500 | [   17.120163] Initializing XFRM netlink socket
+10/05/23 09:41:53 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+10/05/23 09:41:53 EST -0500 | tmpfs                              179M  1.2M  178M   1% /run
+10/05/23 09:41:53 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   28G  7.7G   19G  30% /
+10/05/23 09:41:53 EST -0500 | tmpfs                              894M     0  894M   0% /dev/shm
+10/05/23 09:41:53 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+10/05/23 09:41:53 EST -0500 | /dev/sda1                           29G  429M   27G   2% /data
+10/05/23 09:41:53 EST -0500 | /dev/mmcblk0p2                     2.0G  131M  1.7G   8% /boot
+10/05/23 09:41:53 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+10/05/23 09:41:53 EST -0500 | tmpfs                              179M  4.0K  179M   1% /run/user/1000
+10/05/23 09:41:53 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+10/05/23 09:41:53 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+10/05/23 09:41:53 EST -0500 |     inet 127.0.0.1/8 scope host lo
+10/05/23 09:41:53 EST -0500 |        valid_lft forever preferred_lft forever
+10/05/23 09:41:53 EST -0500 |     inet6 ::1/128 scope host 
+10/05/23 09:41:53 EST -0500 |        valid_lft forever preferred_lft forever
+10/05/23 09:41:53 EST -0500 | 2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+10/05/23 09:41:53 EST -0500 |     link/ether 00:01:c0:1f:d4:0f brd ff:ff:ff:ff:ff:ff
+10/05/23 09:41:53 EST -0500 |     inet 192.168.1.171/24 metric 100 brd 192.168.1.255 scope global dynamic enp2s0
+10/05/23 09:41:53 EST -0500 |        valid_lft 86346sec preferred_lft 86346sec
+10/05/23 09:41:53 EST -0500 |     inet6 2600:4041:202f:9100:201:c0ff:fe1f:d40f/64 scope global dynamic mngtmpaddr noprefixroute 
+10/05/23 09:41:53 EST -0500 |        valid_lft 7143sec preferred_lft 7143sec
+10/05/23 09:41:53 EST -0500 |     inet6 fe80::201:c0ff:fe1f:d40f/64 scope link 
+10/05/23 09:41:53 EST -0500 |        valid_lft forever preferred_lft forever
+10/05/23 09:41:53 EST -0500 | 3: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+10/05/23 09:41:53 EST -0500 |     link/ether 00:01:c0:1f:d4:19 brd ff:ff:ff:ff:ff:ff
+10/05/23 09:41:53 EST -0500 |     altname enp3s0
+10/05/23 09:41:53 EST -0500 | 4: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+10/05/23 09:41:53 EST -0500 |     link/ether 60:f6:77:df:22:cb brd ff:ff:ff:ff:ff:ff
+10/05/23 09:41:53 EST -0500 | 5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+10/05/23 09:41:53 EST -0500 |     link/ether 02:42:6b:fb:81:6f brd ff:ff:ff:ff:ff:ff
+10/05/23 09:41:53 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+10/05/23 09:41:53 EST -0500 |        valid_lft forever preferred_lft forever
+10/05/23 09:41:53 EST -0500 | PING github.com (140.82.112.3) 56(84) bytes of data.
+10/05/23 09:41:53 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=56 time=10.5 ms
+10/05/23 09:41:54 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=56 time=10.4 ms
+10/05/23 09:41:55 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=56 time=11.5 ms
+10/05/23 09:41:55 EST -0500 | 
+10/05/23 09:41:55 EST -0500 | --- github.com ping statistics ---
+10/05/23 09:41:55 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+10/05/23 09:41:55 EST -0500 | rtt min/avg/max/mdev = 10.403/10.827/11.537/0.505 ms
+10/05/23 09:41:55 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+10/05/23 09:41:55 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=118 time=8.39 ms
+10/05/23 09:41:56 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=118 time=4.20 ms
+10/05/23 09:41:57 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=118 time=8.59 ms
+10/05/23 09:41:57 EST -0500 | 
+10/05/23 09:41:57 EST -0500 | --- 8.8.8.8 ping statistics ---
+10/05/23 09:41:57 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+10/05/23 09:41:57 EST -0500 | rtt min/avg/max/mdev = 4.196/7.059/8.590/2.026 ms
+10/05/23 09:41:57 EST -0500 | ##########  END  ##########
