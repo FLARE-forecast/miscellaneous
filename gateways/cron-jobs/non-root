@@ -31,3 +31,6 @@
 # Runs LoRa Radio
 @reboot sleep 60 && /home/ubuntu/miscellaneous/gateways/remote-access/lora-radio.sh
 00 * * * *  /home/ubuntu/miscellaneous/gateways/remote-access/lora-radio.sh
+
+# Gets EddyFlux Files
+45 23 * * * /home/ubuntu/miscellaneous/gateways/eddyflux/eddyflux-get-files.sh

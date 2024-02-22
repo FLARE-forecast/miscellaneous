@@ -105,6 +105,14 @@ export lora_radio_ingress_policing_burst=$(yq e '.lora_radio.ingress_policing_bu
 export nebula_overlay_network_is_enabled=$(yq e '.nebula_overlay_network.is_enabled' $config_file)
 export nebula_overlay_network_log_file=$(yq e '.nebula_overlay_network.log_file' $config_file)
 
+# EddyFlux Get Files
+export eddyflux_get_files_is_enabled=$(yq e '.eddyflux_get_files.is_enabled' $config_file)
+export eddyflux_get_files_log_file=$(yq e '.eddyflux_get_files.log_file' $config_file)
+export eddyflux_get_files_ssh_user=$(yq e '.eddyflux_get_files.ssh_user' $config_file)
+export eddyflux_get_files_ssh_host=$(yq e '.eddyflux_get_files.ssh_host' $config_file)
+export eddyflux_get_files_source_path=$(yq e '.eddyflux_get_files.source_path' $config_file)
+export eddyflux_get_files_destination_path=$(yq e '.eddyflux_get_files.destination_path' $config_file)
+
 ########## DEFINE FUNCTIONS ##########
 
 # Check if module is is_enabled

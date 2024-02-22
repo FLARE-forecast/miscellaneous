@@ -34,6 +34,7 @@ git_push:
   directories:
     - /data/fcre-catwalk-data
     - /data/henrietta-logs
+    - /data/fcre-eddyflux-data
 
 git_garbage_collector:
   is_enabled: true
@@ -41,6 +42,7 @@ git_garbage_collector:
   directories:
     - /data/fcre-catwalk-data
     - /data/henrietta-logs
+    - /data/fcre-eddyflux-data
 
 health_checks_io:
   is_enabled: true
@@ -104,3 +106,11 @@ lora_radio:
 nebula_overlay_network:
   is_enabled: true
   log_file: nebula-overlay-network.log
+
+eddyflux_get_files:
+  is_enabled: true
+  log_file: eddyflux-get-files.log
+  ssh_user: licor
+  ssh_host: 10.10.1.4
+  source_path: ~/data/summaries/*
+  destination_path: /data/fcre-eddyflux-data/
