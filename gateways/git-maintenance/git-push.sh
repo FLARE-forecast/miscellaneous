@@ -29,11 +29,24 @@ for dir in "${dir_array[@]}"; do
     timestamp=$(date +"%a %Y-%m-%d %T %Z")
     echo "Processing: $dir"
     cd "$dir" || continue
+
+    # Stage and commit any new changes
     git add .
-    git commit -m "$timestamp" || continue
-    for commit in $(git log --reverse --format="%H" --branches --not --remotes); do 
-        git push --force origin $commit:refs/heads/$(git rev-parse --abbrev-ref HEAD) || continue
-    done
+    git commit -m "$timestamp" || true
+
+    # Check for unpushed commits
+    unpushed_commits=$(git log --reverse --format="%H" --branches --not --remotes)
+
+    if [[ -n "$unpushed_commits" ]]; then
+        echo "Found unpushed commit(s)."
+        branch_name=$(git rev-parse --abbrev-ref HEAD)
+        for commit in $unpushed_commits; do
+            git push --no-verify origin "$commit:refs/heads/$branch_name" || {
+                echo "Failed to push commit: $commit"
+                continue
+            }
+        done
+    fi
 done
 
 ########## FOOTER ##########
