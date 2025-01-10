@@ -16,7 +16,7 @@ name="FLARE-forecast"
 cntx="orgs"
 page=1
 
-/usr/bin/curl -H "Authorization: token XXX" "https://api.github.com/$cntx/$name/repos?page=$page&per_page=100" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone 2>&1 | tee -a $__log_file
+/usr/bin/curl -H "Authorization: token ghp_XXX" "https://api.github.com/$cntx/$name/repos?page=$page&per_page=100" | grep -e 'clone_url*' | cut -d \" -f 4 | xargs -L1 git clone 2>&1 | tee -a $__log_file
 
 rm -rf ../../head-backup/*-full
 
