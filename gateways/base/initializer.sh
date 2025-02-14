@@ -22,9 +22,16 @@ echo "$general_gateway_name" | sudo tee /etc/hostname
 sudo sed -i "s/old_hostname/$general_gateway_name/g" /etc/hosts
 sudo hostname $general_gateway_name
 
-# Initialize SSH connection and make sure autossh is not running with old configurations
-ssh -p $reverse_ssh_remote_port $reverse_ssh_user@$reverse_ssh_server 'exit'
-sudo pkill -f autossh
+# Check if reverse SSH is enabled before running SSH setup
+if [ "$reverse_ssh_is_enabled" == "true" ]; then
+  echo "Reverse SSH is enabled. Setting up SSH connection..."
+  
+  # Initialize SSH connection and make sure autossh is not running with old configurations
+  ssh -p $reverse_ssh_remote_port $reverse_ssh_user@$reverse_ssh_server 'exit'
+  sudo pkill -f autossh
+else
+  echo "Reverse SSH is disabled. Skipping SSH setup."
+fi
 
 # Setup datalogger directory symbolic link
 if [ ! -L $general_data_dir/$general_datalogger_data_dir ]; then
