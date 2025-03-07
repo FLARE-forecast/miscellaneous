@@ -1,116 +1,118 @@
-general:
-  log_file: general.log
-  gateway_name: henrietta
-  gateway_location: fcre-catwalk
-  gateway_power_mode: ac # "ac" or "battery"
-  data_dir: /data
-  apps_dir: /home/ubuntu/miscellaneous
-  datalogger_data_dir: datalogger-data
-  git_repo: git@github.com:FLARE-forecast/FCRE-data.git
-  git_data_branch: fcre-catwalk-data
-  git_logs_branch: henrietta-logs
-  module_toggler_log_file: module-toggler.log
+# General configurations and module-specific configurations for gateways
 
-shutdown_scheduler:
-  is_enabled: true
-  log_file: shutdown-scheduler.log
-  post_reboot_delay_minutes: 30 # Delay after reboot before scheduling a shutdown when on battery
-  shutdown_time: 00:10 # HH:MM format, the exact time to schedule a shutdown when on AC power
+general: # General configuration for the gateway
+  log_file: general.log                    # Log file for general gateway operations
+  gateway_name: henrietta                  # Unique name of the gateway
+  gateway_location: fcre-catwalk           # Physical location of the gateway
+  gateway_power_mode: ac                   # Power source ("ac" or "battery")
+  data_dir: /data                          # Directory for storing data
+  apps_dir: /home/ubuntu/miscellaneous     # Directory for miscellaneous applications
+  datalogger_data_dir: datalogger-data     # Directory for datalogger output
+  git_repo: git@github.com:FLARE-forecast/FCRE-data.git # Git repository for data
+  git_data_branch: fcre-catwalk-data       # Branch for data storage
+  git_logs_branch: henrietta-logs          # Branch for log storage
+  module_toggler_log_file: module-toggler.log # Log file for module toggling events
 
-startup_notifier:
-  is_enabled: true
-  log_file: startup-notifier.log
-  local_repo_dir: startup-notifier
-  git_repo: git@github.com:FLARE-forecast/FCRE-data.git
-  git_branch: main
+shutdown_scheduler: # Schedules when to shut down the gateway
+  is_enabled: true                         # Enable or disable the shutdown scheduler
+  log_file: shutdown-scheduler.log         # Log file for shutdown events
+  post_reboot_delay_minutes: 30            # Delay after reboot before scheduling a shutdown (when on battery)
+  shutdown_time: 00:10                     # Time to shut down when on AC power (HH:MM)
 
-status_monitor:
-  is_enabled: true
-  log_file: status-monitor.log
+startup_notifier: # Notifies the startup of the gateway by pushing to a Git repo
+  is_enabled: true                         # Enable or disable startup notifications
+  log_file: startup-notifier.log           # Log file for startup notifier
+  local_repo_dir: startup-notifier         # Local directory for the notifier repo
+  git_repo: git@github.com:FLARE-forecast/FCRE-data.git # Git repository for push
+  git_branch: main                         # Branch to push the startup notification
 
-git_push:
-  is_enabled: true
-  log_file: git-push.log
-  directories:
+status_monitor: # Logs gateway status (e.g., connectivity, disk usage)
+  is_enabled: true                         # Enable or disable status monitoring
+  log_file: status-monitor.log             # Log file for status reports
+
+git_push: # Pushes local data and logs to remote Git repositories
+  is_enabled: true                         # Enable or disable Git pushes
+  log_file: git-push.log                   # Log file for Git push actions
+  directories:                             # List of directories to push
     - /data/fcre-catwalk-data
     - /data/henrietta-logs
     - /data/fcre-eddyflux-data
 
-git_garbage_collector:
-  is_enabled: true
-  log_file: git-garbage-collector.log
-  directories:
+git_garbage_collector: # Cleans Git repositories to save disk space
+  is_enabled: true                         # Enable or disable Git garbage collection
+  log_file: git-garbage-collector.log      # Log file for garbage collection actions
+  directories:                             # List of directories to clean
     - /data/fcre-catwalk-data
     - /data/henrietta-logs
     - /data/fcre-eddyflux-data
 
-health_checks_io:
-  is_enabled: true
-  log_file: health-checks-io.log
-  ping_url: https://hc-ping.com/d3e6533f-a382-459b-addf-ca88aa668c8a
-  max_time: 60
-  retry: 5
+health_checks_io: # Sends periodic "alive" pings to HealthChecks.io
+  is_enabled: true                         # Enable or disable HealthChecks monitoring
+  log_file: health-checks-io.log           # Log file for HealthChecks
+  ping_url: https://hc-ping.com/d3e6533f-a382-459b-addf-ca88aa668c8a # Unique HealthChecks URL to ping
+  max_time: 60                             # Max time between pings (seconds)
+  retry: 5                                 # Number of retry attempts on failure
 
-reverse_ssh:
-  is_enabled: true
-  log_file: reverse-ssh.log
-  autossh_log_file: autossh.log
-  local_port: 60011
-  base_port: 61000
-  remote_port: 22
-  localhost: localhost
-  server: 149.165.159.29
-  user: ubuntu
-  ServerAliveInterval: 30
-  ServerAliveCountMax: 3
+reverse_ssh: # Maintains an SSH tunnel from the JS2 front VM to the gateway
+  is_enabled: true                         # Enable or disable the reverse SSH tunnel
+  log_file: reverse-ssh.log                # Log file for reverse SSH
+  autossh_log_file: autossh.log            # Log file for AutoSSH
+  local_port: 60011                        # Local port on the gateway to forward
+  base_port: 61000                         # Base port for dynamic allocation
+  remote_port: 22                          # Remote SSH port on the gateway
+  localhost: localhost                     # Local hostname binding
+  server: 149.165.159.29                   # Remote server (JS2 front VM) IP
+  user: ubuntu                             # SSH user on the remote server
+  ServerAliveInterval: 30                  # Keep-alive message interval (seconds)
+  ServerAliveCountMax: 3                   # Max missed keep-alives before disconnect
 
-datalogger_mock_data_generator:
-  is_enabled: false
-  log_file: datalogger-mock-data-generator.log
-  data_file: datalogger-mock-data.csv
-  interval: 10 # Frequency of generating data in minutes
+datalogger_mock_data_generator: # Simulates sensor data for testing
+  is_enabled: false                        # Enable or disable mock data generation
+  log_file: datalogger-mock-data-generator.log # Log file for mock data generation
+  data_file: datalogger-mock-data.csv      # File to store mock data
+  interval: 10                             # Frequency of data generation (minutes)
 
-network_interface_monitor:
-  is_enabled: false
-  log_file: network-interface-monitor.log
-  log_rotation_interval: 86400 # Frequency of log rotation in seconds
-  interfaces:
+network_interface_monitor: # Monitors network interface traffic
+  is_enabled: false                        # Enable or disable network monitoring
+  log_file: network-interface-monitor.log  # Log file for network activity
+  log_rotation_interval: 86400             # Interval to rotate logs (seconds)
+  interfaces:                              # List of network interfaces to monitor
     - name: enp2s0
-      log_file_directory: enp2s0 # To store .pcap files
+      log_file_directory: enp2s0           # Directory for interface logs (pcap files)
     - name: nebula1
-      log_file_directory: nebula1 # To store .pcap files
+      log_file_directory: nebula1          # Directory for interface logs (pcap files)
 
-led_monitor:  # Not working with newer Linux kernels
-  is_enabled: false
-  log_file: led-monitor.log
+led_monitor: # Monitors LED status (currently not supported on newer kernels)
+  is_enabled: false                        # Enable or disable LED monitoring
+  log_file: led-monitor.log                # Log file for LED monitor
 
-lora_radio:
-  is_enabled: true
-  log_file: lora-radio.log
-  mode: noevio # "evio", "noevio", "noevio-nat", or "pendant"
-  serial_interface: ttyUSB0
-  lora_interface: tnc0
-  evio_interface: appCIBR6 # For "evio" mode
-  uplink_interface: enp1s0 # For "noevio-nat" mode, Interface on the other side of the LoRa link with internet access
-  node_ip: 10.10.101.3
-  node_netmask: /24
-  lora_gateway_ip: 10.10.101.1 # For "pendant" mode, IP address of the gateway on the other side of the LoRa link
-  baud_rate: 115200
-  mtu: 400 # bytes
-  rate: 20 # kbit
-  burst: 32 # kbit
-  latency: 400 # ms
-  ingress_policing_rate: 10 # kbit, For "evio" mode
-  ingress_policing_burst: 10 # kbit, For "evio" mode
-  
-nebula_overlay_network:
-  is_enabled: true
-  log_file: nebula-overlay-network.log
+lora_radio: # Configures LoRa radio communication settings
+  is_enabled: true                         # Enable or disable LoRa radio
+  log_file: lora-radio.log                 # Log file for LoRa activity
+  mode: noevio                             # LoRa mode ("evio", "noevio", "noevio-nat", "pendant")
+  serial_interface: ttyUSB0                # Serial device for LoRa radio
+  lora_interface: tnc0                     # Network interface for LoRa
+  evio_interface: appCIBR6                 # Interface for "evio" mode
+  uplink_interface: enp1s0                 # Internet-facing interface in "noevio-nat" mode
+  node_ip: 10.10.101.3                     # IP address for this node
+  node_netmask: /24                        # Netmask for the LoRa network
+  lora_gateway_ip: 10.10.101.1             # Gateway IP for "pendant" mode
+  baud_rate: 115200                        # Baud rate for serial communication
+  mtu: 400                                 # Maximum Transmission Unit (bytes)
+  rate: 20                                 # Data rate (kbit)
+  burst: 32                                # Burst data rate (kbit)
+  latency: 400                             # Expected latency (ms)
+  ingress_policing_rate: 10                # Ingress rate limit (kbit) for "evio"
+  ingress_policing_burst: 10               # Burst rate limit (kbit) for "evio"
 
-eddyflux_get_files:
-  is_enabled: true
-  log_file: eddyflux-get-files.log
-  ssh_user: licor
-  ssh_host: 10.10.1.4
-  source_path: ~/data/summaries/*
-  destination_path: /data/fcre-eddyflux-data/
+nebula_overlay_network: # Manages Nebula VPN overlay network
+  is_enabled: true                         # Enable or disable Nebula
+  log_file: nebula-overlay-network.log     # Log file for Nebula
+
+eddyflux_get_files: # Retrieves EddyFlux files via SSH
+  is_enabled: true                         # Enable or disable file retrieval
+  log_file: eddyflux-get-files.log         # Log file for retrieval actions
+  ssh_user: licor                          # SSH username to connect to the source
+  ssh_host: 10.10.1.4                      # Host IP of the source device
+  source_path: ~/data/summaries/*          # Source directory to pull files from
+  destination_path: /data/fcre-eddyflux-data/ # Destination directory to store files
