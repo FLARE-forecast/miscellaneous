@@ -56,10 +56,24 @@ case $lora_radio_mode in
     "noevio-nat")
         sudo /usr/local/bin/tncattach /dev/$lora_radio_serial_interface $lora_radio_baud_rate -d -e -n -m $lora_radio_mtu -i "$lora_radio_node_ip""$lora_radio_node_netmask"
         sudo /usr/sbin/tc qdisc add dev $lora_radio_lora_interface root tbf rate "$lora_radio_rate"kbit burst "$lora_radio_burst"kbit latency "$lora_radio_latency"ms
+
+        # Enable IP forwarding
         echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null
-        sudo /sbin/iptables -t nat -A POSTROUTING -o $lora_radio_uplink_interface -j MASQUERADE
-        sudo /sbin/iptables -A FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -m state --state RELATED,ESTABLISHED -j ACCEPT
-        sudo /sbin/iptables -A FORWARD -i $lora_radio_lora_interface -o $lora_radio_uplink_interface -j ACCEPT
+
+        # Clean old broad NAT rule (if exists)
+        sudo iptables -t nat -D POSTROUTING -o $lora_radio_uplink_interface -j MASQUERADE || true
+
+        # Add NAT rule: only NAT traffic from subnet
+        sudo iptables -t nat -C POSTROUTING -s $lora_radio_subnet -o $lora_radio_uplink_interface -j MASQUERADE || \
+        sudo iptables -t nat -A POSTROUTING -s $lora_radio_subnet -o $lora_radio_uplink_interface -j MASQUERADE
+
+        # Accept only reply traffic from lora_radio_uplink_interface → lora_radio_lora_interface
+        sudo iptables -C FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -m state --state ESTABLISHED,RELATED -j ACCEPT || \
+        sudo iptables -A FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+        # Drop unsolicited traffic from lora_radio_uplink_interface → lora_radio_lora_interface
+        sudo iptables -C FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -j DROP || \
+        sudo iptables -A FORWARD -i $lora_radio_uplink_interface -o $lora_radio_lora_interface -j DROP
         ;;
 
     "evio")
@@ -77,6 +91,13 @@ case $lora_radio_mode in
         exit 1
         ;;
 esac
+
+# Print rules for verification
+echo "=== Current iptables NAT Rules ==="
+sudo /usr/sbin/iptables -t nat -L -v -n
+
+echo "=== Current iptables FORWARD Rules ==="
+sudo /usr/sbin/iptables -L FORWARD -v -n
 
 ########## FOOTER ##########
 

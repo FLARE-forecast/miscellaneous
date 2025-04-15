@@ -90,6 +90,7 @@ export lora_radio_serial_interface=$(yq e '.lora_radio.serial_interface' $config
 export lora_radio_lora_interface=$(yq e '.lora_radio.lora_interface' $config_file)
 export lora_radio_evio_interface=$(yq e '.lora_radio.evio_interface' $config_file)
 export lora_radio_uplink_interface=$(yq e '.lora_radio.uplink_interface' $config_file)
+export lora_radio_subnet=$(yq e '.lora_radio.subnet' $config_file)
 export lora_radio_node_ip=$(yq e '.lora_radio.node_ip' $config_file)
 export lora_radio_node_netmask=$(yq e '.lora_radio.node_netmask' $config_file)
 export lora_radio_lora_gateway_ip=$(yq e '.lora_radio.lora_gateway_ip' $config_file)

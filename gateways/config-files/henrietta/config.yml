@@ -94,6 +94,7 @@ lora_radio: # Configures LoRa radio communication settings
   lora_interface: tnc0                     # Network interface for LoRa
   evio_interface: appCIBR6                 # Interface for "evio" mode
   uplink_interface: enp1s0                 # Internet-facing interface in "noevio-nat" mode
+  subnet: 10.10.101.0/24                   # Subnet of the LoRa network for NAT and firewall rules
   node_ip: 10.10.101.3                     # IP address for this node
   node_netmask: /24                        # Netmask for the LoRa network
   lora_gateway_ip: 10.10.101.1             # Gateway IP for "pendant" mode
