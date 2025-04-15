@@ -27,7 +27,12 @@ echo "########## START ##########"
 
 reverse_ssh_autossh_log_file_path=$general_data_dir/$general_git_logs_branch/$reverse_ssh_autossh_log_file
 
-AUTOSSH_DEBUG=1 AUTOSSH_LOGFILE="$reverse_ssh_autossh_log_file_path" autossh -vvv -o "ServerAliveInterval $reverse_ssh_ServerAliveInterval" -o "ServerAliveCountMax $reverse_ssh_ServerAliveCountMax" -M $reverse_ssh_base_port -R $reverse_ssh_local_port:$reverse_ssh_localhost:$reverse_ssh_remote_port -fNT $reverse_ssh_user@$reverse_ssh_server
+export AUTOSSH_LOGFILE=$reverse_ssh_autossh_log_file_path
+export AUTOSSH_DEBUG=1
+export AUTOSSH_FIRST_POLL=$reverse_ssh_autossh_first_poll
+export AUTOSSH_POLL=$reverse_ssh_autossh_poll
+
+autossh -vvv -o "ServerAliveInterval $reverse_ssh_ServerAliveInterval" -o "ServerAliveCountMax $reverse_ssh_ServerAliveCountMax" -M $reverse_ssh_base_port -R $reverse_ssh_local_port:$reverse_ssh_localhost:$reverse_ssh_remote_port -fNT $reverse_ssh_user@$reverse_ssh_server
 
 ########## FOOTER ##########
 

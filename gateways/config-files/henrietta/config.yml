@@ -63,8 +63,10 @@ reverse_ssh: # Maintains an SSH tunnel from the JS2 front VM to the gateway
   localhost: localhost                     # Local hostname binding
   server: 149.165.159.29                   # Remote server (JS2 front VM) IP
   user: ubuntu                             # SSH user on the remote server
-  ServerAliveInterval: 30                  # Keep-alive message interval (seconds)
-  ServerAliveCountMax: 3                   # Max missed keep-alives before disconnect
+  ServerAliveInterval: 60                  # Keep-alive message interval (seconds)
+  ServerAliveCountMax: 5                   # Max missed keep-alives before disconnect
+  autossh_first_poll: 30
+  autossh_poll: 60
 
 datalogger_mock_data_generator: # Simulates sensor data for testing
   is_enabled: false                        # Enable or disable mock data generation
