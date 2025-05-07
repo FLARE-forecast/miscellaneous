@@ -19,7 +19,7 @@ tmp_original_file="" # Initialize for cleanup trap
 # --- Functions ---
 usage() {
   echo "Usage: $0 <original_file> <new_file> <timestamp_pattern> <num_header_lines>" >&2
-  echo "Example: $0 data.csv data_legacy.csv \"2025-01-01 00:00:00\" 4" >&2
+  echo "Example: $0 data.csv data_legacy.csv '2025-01-01 00:00:00' 4" >&2
   exit 1
 }
 
