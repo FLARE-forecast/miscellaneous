@@ -41,10 +41,12 @@ for dir in "${dir_array[@]}"; do
         echo "Found unpushed commit(s)."
         branch_name=$(git rev-parse --abbrev-ref HEAD)
         for commit in $unpushed_commits; do
-            git push --no-verify origin "$commit:refs/heads/$branch_name" || {
-                echo "Failed to push commit: $commit"
-                continue
-            }
+            if git push --no-verify origin "$commit:refs/heads/$branch_name"; then
+                echo "Successfully pushed: $commit"
+            else
+                echo "Failed to push: $commit"
+                break
+            fi
         done
     fi
 done
