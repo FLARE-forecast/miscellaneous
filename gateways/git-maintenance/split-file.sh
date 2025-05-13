@@ -131,4 +131,22 @@ else
   echo "No data lines to delete from '$original_file' (calculated deletion range: $start_delete_line to $end_delete_line based on timestamp at line $timestamp_line_num and $header_lines header lines)."
 fi
 
+# --- Part 2.1: Modify permission on the new original_file ---
+# This part correct the permission on the new generated original_file
+# and change the owner to ftpuser:ftpuser
+
+if sudo chmod 670 "${original_file}"; then 
+  echo "$original_file gets rw-rwx--- permission" >&2
+else 
+  echo "Cannot apply chmod to $original_file" >&2
+  exit 1
+fi
+
+if sudo chown ftpuser:ftpuser "${original_file}"; then 
+  echo "$original_file now belongs to ftpuser:ftpuser" >&2
+else 
+  echo "Cannot apply chown to $original_file" >&2
+  exit 1
+fi
+
 echo "Script completed successfully."
