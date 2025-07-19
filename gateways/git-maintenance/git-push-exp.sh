@@ -20,17 +20,16 @@ exec > >(while IFS= read -r line; do log_to_file "$module_name" "$line"; echo "$
 
 echo "########## START ##########"
 
-##########  BODY  ##########
+########## FUNCTIONS ##########
 
-# Read directories line-by-line into an array
-readarray -t dir_array <<< "$git_push_directories"
+process_git_directory() {
+    local target_dir="$1"
+    local timestamp=$(date +"%a %Y-%m-%d %T %Z")
+    echo "Processing: $target_dir"
+    cd "$target_dir" || return 1
 
-for dir in "${dir_array[@]}"; do
-    timestamp=$(date +"%a %Y-%m-%d %T %Z")
-    echo "Processing: $dir"
-    cd "$dir" || continue
+    local failed_on_push=0
 
-    # Stage and commit any new changes
     git add .
     git commit -m "$timestamp" || true
 
@@ -45,10 +44,39 @@ for dir in "${dir_array[@]}"; do
                 echo "Successfully pushed: $commit"
             else
                 echo "Failed to push: $commit"
+                failed_on_push=1
                 break
             fi
         done
     fi
+
+    return failed_on_push
+
+}
+
+##########  BODY  ##########
+
+# Read directories line-by-line into an array
+readarray -t dir_array <<< "$git_push_directories"
+
+for dir in "${dir_array[@]}"; do
+    # copy files to experiment directory
+    exp_dir="${dir}-exp"
+    rsync -a --delete --exclude='.git' "$dir/" "$exp_dir/"
+
+    # Stage and commit any new changes
+    echo "========Primary directory========"
+    if ! process_git_directory "$dir"; then
+        echo "Primary directory $dir failed but continuing with experimental directory."
+    fi
+    echo "========Primary directory end========"
+    # push the experiment dir
+    echo "========Experiemental directory========"
+    if ! process_git_directory "$exp_dir"; then
+        echo "Experimental directory $exp_dir failed."
+    fi
+    echo "========Experiemental directory end========"
+    
 done
 
 ########## FOOTER ##########
