@@ -61,7 +61,7 @@ readarray -t dir_array <<< "$git_push_directories"
 
 for dir in "${dir_array[@]}"; do
     # copy files to experiment directory
-    exp_dir="${dir}-exp"
+    exp_dir="exp-${dir}"
     rsync -a --delete --exclude='.git' "$dir/" "$exp_dir/"
 
     # Stage and commit any new changes
