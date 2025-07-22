@@ -50,7 +50,7 @@ process_git_directory() {
         done
     fi
 
-    return failed_on_push
+    return $failed_on_push
 
 }
 
@@ -59,9 +59,13 @@ process_git_directory() {
 # Read directories line-by-line into an array
 readarray -t dir_array <<< "$git_push_directories"
 
+ssh-keygen -R $lora_radio_lora_gateway_ip
+
 for dir in "${dir_array[@]}"; do
     # copy files to experiment directory
-    exp_dir="exp-${dir}"
+    dir="${dir%/}"  # Normalize path
+    dir_basename="${dir##*/}"
+    exp_dir="/data/exp-${dir_basename}"  # Ensure correct absolute path
     rsync -a --delete --exclude='.git' "$dir/" "$exp_dir/"
 
     # Stage and commit any new changes
@@ -76,7 +80,7 @@ for dir in "${dir_array[@]}"; do
         echo "Experimental directory $exp_dir failed."
     fi
     echo "========Experiemental directory end========"
-    
+
 done
 
 ########## FOOTER ##########
