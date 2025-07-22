@@ -40,7 +40,7 @@ process_git_directory() {
         echo "Found unpushed commit(s)."
         branch_name=$(git rev-parse --abbrev-ref HEAD)
         for commit in $unpushed_commits; do
-            if git push --no-verify origin "$commit:refs/heads/$branch_name"; then
+            if  GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git push --no-verify origin "$commit:refs/heads/$branch_name"; then
                 echo "Successfully pushed: $commit"
             else
                 echo "Failed to push: $commit"
